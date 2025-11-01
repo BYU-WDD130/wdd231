@@ -8,6 +8,7 @@
       height: auto;
       gap: 10px;
       height: 100%x;
+
     }
 
 .section p {
@@ -26,7 +27,7 @@
 .photo {
    background-color: rgb(97, 141, 182);
    text-align: center;
-   border: 1px solid #ddd;
+   border: 1px solid #131010;
    margin: 0;
    border-radius: 5px;
 
@@ -57,7 +58,7 @@ h2 {
 }
 
 #certificates {
-  border: solid 1px #ddd;
+  border: solid 1px #131010;
   border-radius: 5px;
   background-color: rgb(97, 141, 182);
 }
@@ -79,7 +80,7 @@ h2 {
    
 #about-me {
  background-color: rgb(97, 141, 182);
-  border: 1px solid #ddd ;
+  border: 1px solid #131010;
   margin: 0;
   border-radius: 5px;
   justify-content: center;
