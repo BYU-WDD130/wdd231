@@ -40,21 +40,30 @@
 
   ];
 
-function filterMenu(subject) {
-  let itemsToShow = [];
+// ---------- NUEVO: cargar cursos completados ----------
+function getCompletedCourses() {
+  return JSON.parse(localStorage.getItem("completedCourses")) || [];
+}
 
-  if (subject === "all") {
-    itemsToShow = featuredItems;
-  } else {
-    itemsToShow = featuredItems.filter(item => item.subject === subject);
-  }
+function saveCompletedCourses(list) {
+  localStorage.setItem("completedCourses", JSON.stringify(list));
+}
+
+// ---------- Filtrado ----------
+function filterMenu(subject) {
+  let itemsToShow = subject === "all"
+    ? featuredItems
+    : featuredItems.filter(item => item.subject === subject);
 
   displayMenuItems(itemsToShow);
 }
 
+// ---------- Mostrar cursos ----------
 function displayMenuItems(items) {
   const container = document.getElementById("menu-items");
   container.innerHTML = "";
+
+  const completedCourses = getCompletedCourses();
 
   if (items.length === 0) {
     container.innerHTML = "<p>No items found.</p>";
@@ -62,17 +71,43 @@ function displayMenuItems(items) {
   }
 
   items.forEach(item => {
+    const courseId = `${item.subject}-${item.number}`;
+    const isCompleted = completedCourses.includes(courseId);
+
     const card = document.createElement("div");
     card.className = "item-card";
     card.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" loading="lazy">
       <h3>${item.name}</h3>
-      <p>${item.description || item.price || ''}</p>
+      <p><strong>Subject:</strong> ${item.subject.toUpperCase()}</p>
+      <p><strong>Course #:</strong> ${item.number}</p>
+      <p><strong>Credits:</strong> ${item.credits}</p>
+      <label>
+        <input type="checkbox" class="completed-checkbox" data-id="${courseId}" ${isCompleted ? "checked" : ""}>
+        Tomado
+      </label>
     `;
+
     container.appendChild(card);
+  });
+
+  // Agregar eventos a los checkbox
+  document.querySelectorAll(".completed-checkbox").forEach(checkbox => {
+    checkbox.addEventListener("change", (e) => {
+      const courseId = e.target.dataset.id;
+      let completed = getCompletedCourses();
+
+      if (e.target.checked) {
+        if (!completed.includes(courseId)) completed.push(courseId);
+      } else {
+        completed = completed.filter(id => id !== courseId);
+      }
+
+      saveCompletedCourses(completed);
+    });
   });
 }
 
+// ---------- Contador de visitas ----------
 function saveVisitCount() {
   const key = "visitCount";
   let count = localStorage.getItem(key);
@@ -80,10 +115,14 @@ function saveVisitCount() {
   localStorage.setItem(key, count);
 
   if (count === 1) {
-    console.log(`Welcome! This is your first visit.`);
+    console.log("Welcome! This is your first visit.");
   } else {
     console.log(`Welcome back! You've visited ${count} times.`);
   }
 }
 
-
+// ---------- Inicializar ----------
+window.addEventListener("DOMContentLoaded", () => {
+  saveVisitCount();
+  displayMenuItems(featuredItems);
+});

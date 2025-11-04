@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dery Henriquez">
     <link rel="stylesheet" href="styles/normalize.css">
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/courserespaldo.js"></script>
-    <script src="scripts/getdate.js"></script>
-<!-- -->
+
+
 </head>
+<body>
+
 <header>
   <img src="images/index-logo.svg" alt="site logo" width="115" height="115">
   <span>Dery Henriquez</span>
   <button id="ham-btn" class="hamburger"></button>
-     <nav id="nav-bar" class="navigation">
+</header>
+
+
+<nav id="nav-bar" class="navigation">
       <ul>
         <li class="current"><a href="index.html">Home</a></li>
         <li ><a href="about.html">Chamber</a></li>
         <li><a href="contact.html">Final</a></li>
     </ul>
- </nav>
-</header>
-<body>
-    <header></header>
-    <nav></nav>
-    <main>
+</nav>
+
+<main>
       <h1>Home</h1>
  <div class="section">
    <section class="card" id="about-me">
@@ -43,7 +46,7 @@
    <section class="card photo" id="photo">
 
         <h2>Student Photo</h2>
-        <img src="images/profile.jpg" alt="student photo" width="200" height="250">
+        <img src="images/profile.jpg" alt="student photo" width="150" height="150">
     </section>    
 </div> 
 
@@ -55,14 +58,14 @@
                 <button onclick="filterMenu('cse')">CSE</button>
                 <button onclick="filterMenu('wdd')">WDD</button>
 
-  
+  </div>
  
   <div id="menu-items"></div>
 
-   </section>
+
 <p id="total-credits"><strong>Total Credits:</strong> 0</p>
-    
-   </div>
+   </section>    
+
     </main>
     <footer>
       <div class="social">
@@ -71,11 +74,11 @@
            <a href="" target="_blank"><img src="images/linkedin.svg" alt="Linked in " width="16" height="16"> </a>
            <a href="" target="_blank"><img src="images/twitter.svg" alt="twitter" width="16" height="16"> </a>
       </div>
-     <p> &copy; <span id="currentyear"></span> Dery Henriquez. New Jersey. </p> 
+     <p> &copy; <span id="currentyear"></span> Dery Henriquez | New Jersey </p> 
    <p id="LastModified"></p>
 
     </footer>
-    <script src="scripts/navigation.js"defer></script>
+     <script src="scripts/navigation.js" defer></script>   
 
 </body>
 </html>
