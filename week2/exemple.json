@@ -1,0 +1,36 @@
+{
+  "family_name": "Flores",
+  "move_in_date": "2025-06-15",
+  "number_of_people": 5,
+  "visited_by_bishopric": false,
+  "family_members": [
+    {
+      "name": " Mathew, Flores",
+      "gender": "Male",
+      "birthdate": "1985-05-15" 
+    },
+    {
+      "name": "Ana, Godoy",
+      "gender": "female",
+      "birthdate": "1985-05-16"
+    },
+
+    {
+      "name": "Sofia, Flores",
+      "gender": "female",
+      "birthdate": "2012-04-03"
+    },
+
+    {
+      "name": "Daniel, Flores",
+      "gender": "Male",
+      "birthdate": "2013-05-15"
+    },
+    {
+      "name": "Lucia, Flores",
+      "gender": "female",
+      "birthdate": "2019-06-23"
+    }
+  ]
+
+}
