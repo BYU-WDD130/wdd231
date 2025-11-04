@@ -1,46 +1,13 @@
   const featuredItems = [
-  {
-    name: "Web Fudamentals",
-    subject: "WDD",
-    number: "130",
-    credits: "2"
-   },
-  {
-    name: "Introduction to Programming",
-    subject:  "CSE",
-    number: "110",
-    credits:"2",  
+  { name: "Web Fundamentals", subject: "wdd", number: "130", credits: "2" },
+  { name: "Introduction to Programming", subject: "cse", number: "110", credits: "2" },
+  { name: "Dynamic Web fundamentals", subject: "wdd", number: "131", credits: "2" },
+  { name: "Programing with classes", subject: "cse", number: "210", credits: "2" },
+  { name: "Web Fronted Development I", subject: "wdd", number: "231", credits: "2" },
+  { name: "Proraming whith functions", subject: "cse", number: "111", credits: "2" },
+];
 
-  },
-  {
-    name: "Dynamic Web fundamentals",
-    subject:  "CSE",
-    number: "131",
-    credits: "images/dadcake2.webp",
-
-  },
-  {
-    name: "Programing with clases",
-    subject: "CSE",
-    number: "210",
-    credits: "images/vanilla-slice.webp",
-  },
-  {
-    name: "Web Fronted Development I",
-    subject:  " WDD",
-    number: "231",
-    credits: "images/chocoflan5.webp",
-  },
-  {
-    name: "Proraming whith functions",
-    subject:  "CSE",
-    number: "111",
-    credits: "images/semita2.webp",
-  },
-
-  ];
-
-// ---------- NUEVO: cargar cursos completados ----------
+// ---------- NUEVO: manejo de cursos completados ----------
 function getCompletedCourses() {
   return JSON.parse(localStorage.getItem("completedCourses")) || [];
 }
@@ -49,13 +16,15 @@ function saveCompletedCourses(list) {
   localStorage.setItem("completedCourses", JSON.stringify(list));
 }
 
-// ---------- Filtrado ----------
+// ---------- Filtrar ----------
 function filterMenu(subject) {
-  let itemsToShow = subject === "all"
-    ? featuredItems
-    : featuredItems.filter(item => item.subject === subject);
+  let itemsToShow =
+    subject === "all"
+      ? featuredItems
+      : featuredItems.filter((item) => item.subject === subject);
 
   displayMenuItems(itemsToShow);
+  updateSummary(); // actualizar resumen después de filtrar
 }
 
 // ---------- Mostrar cursos ----------
@@ -70,7 +39,7 @@ function displayMenuItems(items) {
     return;
   }
 
-  items.forEach(item => {
+  items.forEach((item) => {
     const courseId = `${item.subject}-${item.number}`;
     const isCompleted = completedCourses.includes(courseId);
 
@@ -91,7 +60,7 @@ function displayMenuItems(items) {
   });
 
   // Agregar eventos a los checkbox
-  document.querySelectorAll(".completed-checkbox").forEach(checkbox => {
+  document.querySelectorAll(".completed-checkbox").forEach((checkbox) => {
     checkbox.addEventListener("change", (e) => {
       const courseId = e.target.dataset.id;
       let completed = getCompletedCourses();
@@ -99,12 +68,33 @@ function displayMenuItems(items) {
       if (e.target.checked) {
         if (!completed.includes(courseId)) completed.push(courseId);
       } else {
-        completed = completed.filter(id => id !== courseId);
+        completed = completed.filter((id) => id !== courseId);
       }
 
       saveCompletedCourses(completed);
+      updateSummary(); // actualizar el resumen cada vez que cambia algo
     });
   });
+}
+
+// ---------- NUEVO: resumen de cursos completados ----------
+function updateSummary() {
+  const completedCourses = getCompletedCourses();
+  const summaryDiv = document.getElementById("summary");
+
+  // Contar créditos totales
+  let totalCredits = 0;
+  featuredItems.forEach((course) => {
+    const courseId = `${course.subject}-${course.number}`;
+    if (completedCourses.includes(courseId)) {
+      totalCredits += parseInt(course.credits);
+    }
+  });
+
+  summaryDiv.innerHTML = `
+    <p><strong>Cursos completados:</strong> ${completedCourses.length}</p>
+    <p><strong>Créditos totales:</strong> ${totalCredits}</p>
+  `;
 }
 
 // ---------- Contador de visitas ----------
@@ -125,4 +115,5 @@ function saveVisitCount() {
 window.addEventListener("DOMContentLoaded", () => {
   saveVisitCount();
   displayMenuItems(featuredItems);
+  updateSummary();
 });

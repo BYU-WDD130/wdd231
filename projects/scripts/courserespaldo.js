@@ -7,6 +7,9 @@ const featuredItems = [
   { name: "Proraming whith functions", subject: "cse", number: "111", credits: "2" },
 ];
 
+// Lista de cursos ya tomados
+const takenCourses = ["CSE-110", "WDD-130", "CSE-111", "WDD-131"];
+
 function filterMenu(subject) {
   let itemsToShow = subject === "all"
     ? featuredItems
@@ -28,8 +31,14 @@ function displayMenuItems(items) {
   items.forEach(item => {
     const card = document.createElement("div");
     card.className = "item-card";
-    // Solo mostrar los valores dentro de las comillas, en horizontal
-    card.textContent = `${item.subject} ${item.number}`;
+    card.textContent = `${item.subject.toUpperCase()}-${item.number}`;
+
+    // Si el curso ya fue tomado → fondo verde
+    const courseCode = `${item.subject.toUpperCase()}-${item.number}`;
+    if (takenCourses.includes(courseCode)) {
+      card.style.backgroundColor = "lightgreen";
+    }
+
     container.appendChild(card);
   });
 }
@@ -45,7 +54,6 @@ window.addEventListener("DOMContentLoaded", () => {
   displayMenuItems(featuredItems);
   displayTotalCredits(featuredItems);
 
-
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
-    document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
+  document.getElementById("currentyear").textContent = new Date().getFullYear();
+  document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
 });
