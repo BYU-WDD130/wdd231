@@ -11,8 +11,9 @@ h1 {
 
 
 
-.certificated{
-      background-color: aliceblue;
+.certificates {
+  background-color: rgb(97, 141, 182);
+
 }
 
 header {
@@ -121,6 +122,7 @@ header span {
 
 .card {
     margin: 5px;
+      background-color: rgb(97, 141, 182);
 }
 
 
@@ -202,7 +204,9 @@ button:focus {
     text-align: center;
 }
 
-
+#total-credits {
+    text-align: center;
+}
 
 
 .social {

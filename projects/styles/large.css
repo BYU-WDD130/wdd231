@@ -34,6 +34,10 @@
 
 }
 
+#total-credits {
+    text-align: center;
+}
+
 .photo img {
   margin: 10px;
 }
