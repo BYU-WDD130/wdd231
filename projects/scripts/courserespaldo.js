@@ -7,7 +7,7 @@ const featuredItems = [
   { name: "Proraming whith functions", subject: "cse", number: "111", credits: "2" },
 ];
 
-// Lista de cursos ya tomados
+// Lista de cursos que ya he tomado
 const takenCourses = ["CSE-110", "WDD-130", "CSE-111", "WDD-131"];
 
 function filterMenu(subject) {
@@ -33,7 +33,7 @@ function displayMenuItems(items) {
     card.className = "item-card";
     card.textContent = `${item.subject.toUpperCase()}-${item.number}`;
 
-    // Si el curso ya fue tomado → fondo verde
+    // Si el curso ya fue tomado me lo marcara con fondo verde
     const courseCode = `${item.subject.toUpperCase()}-${item.number}`;
     if (takenCourses.includes(courseCode)) {
       card.style.backgroundColor = "lightgreen";
@@ -49,7 +49,7 @@ function displayTotalCredits(items) {
   totalContainer.textContent = `Total Credits: ${total}`;
 }
 
-// Inicializa al cargar
+// Ojo, Inicializa al cargar
 window.addEventListener("DOMContentLoaded", () => {
   displayMenuItems(featuredItems);
   displayTotalCredits(featuredItems);
