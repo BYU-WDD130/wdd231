@@ -169,10 +169,9 @@ button {
 }
 
 #ham-btn.hamburger {
-
   color: rgb(19, 17, 17);
   border: none;
-  border-radius: px;
+  border-radius: 5px;
   padding: 10px 1px;
   margin-right: 8px;
   cursor: pointer;
