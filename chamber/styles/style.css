@@ -30,7 +30,9 @@ header .logo {
     font-size: 1.5rem;
 }
 
-
+.logo img {
+    border-radius: 50px;
+}
 
 header nav ul {
     display: flex;
@@ -97,6 +99,11 @@ header .cta-btn {
 .accent-btn {
     background-color: #FF6F00;
     color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1px  10px 5px;
+    border-radius: 5px;
+
 }
 
 /* Quick Links */
