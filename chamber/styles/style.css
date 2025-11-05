@@ -200,6 +200,7 @@ header .cta-btn {
     padding: 2rem;
     background-color: #F4F4F4;
     text-align: center;
+    align-items: center;
 }
 
 .testimonial-slider {
