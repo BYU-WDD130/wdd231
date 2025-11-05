@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    background-color: #F4F4F4;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+header .logo {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+header .cta-btn {
+    background-color: #FF6F00;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-buttons .btn {
+    margin: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+.primary-btn {
+    background-color: #00274D;
+    color: #fff;
+}
+
+.accent-btn {
+    background-color: #FF6F00;
+    color: #fff;
+}
+
+/* Quick Links */
+.quick-links .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.quick-links .card {
+    background-color: #fff;
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.quick-links .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Events */
+.events {
+    padding: 2rem;
+    text-align: center;
+}
+
+.events h2 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1rem;
+}
+
+.events-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.event-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+}
+
+/* Featured Businesses */
+.featured-businesses {
+    padding: 2rem;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.business-card {
+    min-width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 2rem;
+    background-color: #F4F4F4;
+    text-align: center;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.testimonial {
+    min-width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #00274D;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-container h3 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0.5rem;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #FF6F00;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.sitemap {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
