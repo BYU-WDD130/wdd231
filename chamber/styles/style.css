@@ -109,6 +109,7 @@ header .cta-btn {
 }
 
 .quick-links .card {
+    background-image: url('favicon.png');
     background-color: #fff;
     flex: 1 1 200px;
     text-align: center;
