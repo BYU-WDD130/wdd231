@@ -205,6 +205,7 @@ header .cta-btn {
 
 .testimonial-slider {
     display: flex;
+
     overflow-x: auto;
     gap: 1rem;
     padding: 1rem 0;
@@ -256,4 +257,10 @@ footer button {
     text-align: center;
     margin-top: 1rem;
     font-size: 0.9rem;
+}
+
+.lastmodified {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
 }

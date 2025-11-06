@@ -29,4 +29,7 @@ carousels.forEach(carousel => {
         const walk = (x - startX) * 2; // scroll-fast
         carousel.scrollLeft = scrollLeft - walk;
     });
+
+  document.getElementById("currentyear").textContent = new Date().getFullYear();
+  document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
 });
