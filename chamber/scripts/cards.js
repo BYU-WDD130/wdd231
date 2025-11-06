@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".quick-links .card");
 
   const quickLinkImages = [
-    "image/membership.jpg",
-    "image/events.jpg",
-    "image/directory.jpg",
+    "image/membership1.jpg",
+    "image/events1(1).jpg",
+    "image/directory(1).jpg",
     "image/resources.jpg"
   ];
 
