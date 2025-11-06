@@ -33,4 +33,23 @@ document.addEventListener("DOMContentLoaded", () => {
     img.classList.add("event-img");
     eventCard.prepend(img);
   });
+
+
+  // --- BUSINESS CARDS SECTION ---
+  const businessCards = document.querySelectorAll('.featured-businesses .business-card');
+  
+  const businessImages = [
+    "image/mixernet(1).jpg",
+    "image/Bakery.jpg",
+    "image/marketing(2).jpg"
+  ];
+  businessCards.forEach((businessCard, index) => {
+    const img = document.createElement("img");
+    img.src = businessImages[index];
+    img.alt = businessCard.querySelector("h3").textContent.trim() + " logo";
+    img.classList.add("business-logo");
+    businessCard.prepend(img);
+  });
+
+
 });
