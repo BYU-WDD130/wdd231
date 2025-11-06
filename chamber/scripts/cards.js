@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".quick-links .card");
 
   const quickLinkImages = [
-    "images/membership.jpg",
-    "images/events.jpg",
-    "images/directory.jpg",
-    "images/resources.jpg"
+    "image/membership.jpg",
+    "image/events.jpg",
+    "image/directory.jpg",
+    "image/resources.jpg"
   ];
 
   cards.forEach((card, index) => {
@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const eventCards = document.querySelectorAll(".events .event-card");
 
   const eventImages = [
-    "images/mixer.jpg",
-    "images/workshop.jpg",
-    "images/marketing.jpg"
+    "image/mixernet(1).jpg",
+    "image/workshop(1).jpg",
+    "image/marketing(2).jpg"
   ];
 
   eventCards.forEach((eventCard, index) => {
