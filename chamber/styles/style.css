@@ -259,8 +259,9 @@ footer button {
     font-size: 0.9rem;
 }
 
-.lastmodified {
+#LastModified {
     text-align: center;
+    align-items: center;
     font-size: 0.8rem;
     margin-top: 0.5rem;
 }
