@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const quickLinkImages = [
     "image/membership1.jpg",
     "image/events1(1).jpg",
-    "image/directory(1).jpg",
+    "image/suitcase(1).jpg",
     "image/resources.jpg"
   ];
 

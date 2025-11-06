@@ -118,11 +118,12 @@ header .cta-btn {
     flex-wrap: wrap;
     padding: 2rem;
     gap: 1rem;
+    align-items: center;
 }
 
 .quick-links .card {
     background-color: #fff;
-    flex: 1 1 200px;
+    flex: 1 1 100px;
     text-align: center;
     padding: 2rem;
     border-radius: 10px;
@@ -136,8 +137,8 @@ header .cta-btn {
 }
 
 .quick-links .card img {
-  width: 100%;
-  height: 140px;
+  width: 100;
+  height: 144px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 0.5rem;
