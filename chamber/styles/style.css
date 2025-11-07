@@ -60,7 +60,7 @@ button:focus {
     justify-content: center;
     align-items: center;
     border: none;
-    color: #304058;
+    color: #00274D;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -96,7 +96,7 @@ button:focus {
     margin: 0;
     padding: 0;
     color: white;
-   background-color: #3D405B;      
+   background-color: #00274D;      
 
 
 }
