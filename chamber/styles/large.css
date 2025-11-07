@@ -1,0 +1,17 @@
+@media only screen and (min-width: 38rem) {
+
+
+
+
+.hamburger {
+  display: none;
+
+
+}
+
+.navigation {
+  display: block;
+  background-color: #3D405B;
+  }
+
+}

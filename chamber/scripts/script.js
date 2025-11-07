@@ -29,7 +29,14 @@ carousels.forEach(carousel => {
         const walk = (x - startX) * 2; // scroll-fast
         carousel.scrollLeft = scrollLeft - walk;
     });
+});
+const navbutton = document.querySelector('#ham-btn');
+const navBar = document.querySelector('#nav-bar');
+
+navbutton.addEventListener('click', () => {
+  navbutton.classList.toggle('show');
+  navBar.classList.toggle('show');  
+});
 
   document.getElementById("currentyear").textContent = new Date().getFullYear();
   document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
-});
