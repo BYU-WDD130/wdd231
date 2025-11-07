@@ -81,7 +81,9 @@ button:focus {
 /*navigation */
 
 .navigation {
+
     display: none;
+
 
 }
 
@@ -170,14 +172,21 @@ header .cta-btn {
     margin-bottom: 1rem;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .hero-buttons .btn {
     margin: 0.5rem;
-    padding: 0.7rem 1.2rem;
+    padding: 5px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
 }
+
 
 .primary-btn {
     background-color: #00274D;
