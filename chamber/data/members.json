@@ -5,7 +5,7 @@
       "address": "123 Main St, Newark, NJ",
       "phone": "(973) 555-1234",
       "website": "https://sunrisecafe.com",
-      "image": "image/sunrisecafe.jpg",
+      "image": "images/sunrisecafe.jpg",
       "membership": "Gold",
       "description": "A cozy café serving locally roasted coffee and homemade pastries."
     },
@@ -14,7 +14,7 @@
       "address": "456 Greenway Blvd, Newark, NJ",
       "phone": "(973) 555-5678",
       "website": "https://gardentechlandscaping.com",
-      "image": "image/garden.jpg",
+      "image": "images/garden.jpg",
       "membership": "Silver",
       "description": "Professional landscaping and garden design services."
     },
@@ -23,7 +23,7 @@
       "address": "789 Wellness Ave, Newark, NJ",
       "phone": "(973) 555-8765",
       "website": "https://cityfitness.com",
-      "image": "image/fitness.jpg",
+      "image": "images/fitness.jpg",
       "membership": "Gold",
       "description": "Affordable fitness memberships and personal training."
     },
@@ -32,7 +32,7 @@
       "address": "321 Innovation Dr, Newark, NJ",
       "phone": "(973) 555-4321",
       "website": "https://technovasolutions.com",
-      "image": "image/technova.jpg",
+      "image": "images/technova.jpg",
       "membership": "Gold",
       "description": "IT consulting and software development for small businesses."
     },
@@ -41,7 +41,7 @@
       "address": "654 Bloom St, Newark, NJ",
       "phone": "(973) 555-9876",
       "website": "https://roseflorist.com",
-      "image": "image/rose.jpg",
+      "image": "images/rose.jpg",
       "membership": "Silver",
       "description": "Family-owned flower shop with delivery across Essex County."
     },
@@ -50,7 +50,7 @@
       "address": "987 Market Ave, Newark, NJ",
       "phone": "(973) 555-2468",
       "website": "https://downtowndiner.com",
-      "image": "image/downtown.jpg",
+      "image": "images/downtown.jpg",
       "membership": "Bronze",
       "description": "Classic American diner serving breakfast all day."
     },
@@ -59,7 +59,7 @@
       "address": "159 Shine Blvd, Newark, NJ",
       "phone": "(973) 555-1357",
       "website": "https://sparklecleaners.com",
-      "image": "image/sparckle.jpg",
+      "image": "images/sparckle.jpg",
       "membership": "Gold",
       "description": "Eco-friendly dry cleaning and laundry services."
     },
@@ -69,7 +69,7 @@
       "address": "123 Shine Blvd, Newark, NJ",
       "phone": "(862) 846-4408",
       "website": "https://byu-wdd130.github.io/wdd131/project/index.html",
-      "image": "image/redrosede.jpg",
+      "image": "images/redrosede.jpg",
       "membership": "Gold",
       "description": "Local bakery crafting elegant, handmade desserts for all occasions."
     }
