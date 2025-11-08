@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: #333333;
