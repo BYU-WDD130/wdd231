@@ -23,6 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const eventImages = [
     "image/mixernet(1).jpg",
     "image/workshop(1).jpg",
+    "image/marketing(2).jpg",
+    "image/marketing(2).jpg",
+    "image/marketing(2).jpg",
+    "image/marketing(2).jpg",
+    "image/marketing(2).jpg",
     "image/marketing(2).jpg"
   ];
 
@@ -39,9 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const businessCards = document.querySelectorAll('.featured-businesses .business-card');
   
   const businessImages = [
-    "image/mixernet(1).jpg",
+    "image/fitness.jpg",
     "image/Bakery.jpg",
-    "image/marketing(2).jpg"
+    "image/downtown.jpg"
   ];
   businessCards.forEach((businessCard, index) => {
     const img = document.createElement("img");
