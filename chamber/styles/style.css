@@ -279,6 +279,9 @@ header .cta-btn {
     align-items: center;
 }
 
+.member-card p {
+
+}
 .carousel {
     display: flex;
 
@@ -345,8 +348,10 @@ p.level {
   border: solid 1px black;
   border-radius: 10px;
   padding: 1rem;
-  text-align: center;
+
   background: #53494909;
+  color: black;
+  margin: 10px;
 
 }
 
