@@ -6,7 +6,7 @@
       "phone": "(973) 555-1234",
       "website": "https://sunrisecafe.com",
       "image": "image/sunrisecafe.jpg",
-      "membership": 3,
+      "membership": "Gold",
       "description": "A cozy café serving locally roasted coffee and homemade pastries."
     },
     {
@@ -15,7 +15,7 @@
       "phone": "(973) 555-5678",
       "website": "https://gardentechlandscaping.com",
       "image": "image/garden.jpg",
-      "membership": 2,
+      "membership": "Silver",
       "description": "Professional landscaping and garden design services."
     },
     {
@@ -24,7 +24,7 @@
       "phone": "(973) 555-8765",
       "website": "https://cityfitness.com",
       "image": "image/fitness.jpg",
-      "membership": 1,
+      "membership": "Gold",
       "description": "Affordable fitness memberships and personal training."
     },
     {
@@ -33,7 +33,7 @@
       "phone": "(973) 555-4321",
       "website": "https://technovasolutions.com",
       "image": "image/technova.jpg",
-      "membership": 3,
+      "membership": "Gold",
       "description": "IT consulting and software development for small businesses."
     },
     {
@@ -42,7 +42,7 @@
       "phone": "(973) 555-9876",
       "website": "https://roseflorist.com",
       "image": "image/rose.jpg",
-      "membership": 2,
+      "membership": "Silver",
       "description": "Family-owned flower shop with delivery across Essex County."
     },
     {
@@ -51,7 +51,7 @@
       "phone": "(973) 555-2468",
       "website": "https://downtowndiner.com",
       "image": "image/downtown.jpg",
-      "membership": 1,
+      "membership": "Bronze",
       "description": "Classic American diner serving breakfast all day."
     },
     {
@@ -60,8 +60,18 @@
       "phone": "(973) 555-1357",
       "website": "https://sparklecleaners.com",
       "image": "image/sparckle.jpg",
-      "membership": 3,
+      "membership": "Gold",
       "description": "Eco-friendly dry cleaning and laundry services."
+    },
+
+        {
+      "name": "Red Rose Desserts",
+      "address": "123 Shine Blvd, Newark, NJ",
+      "phone": "(862) 846-4408",
+      "website": "https://byu-wdd130.github.io/wdd131/project/index.html",
+      "image": "image/bakery.jpg",
+      "membership": "Gold",
+      "description": "Local bakery crafting elegant, handmade desserts for all occasions."
     }
   ]
 }

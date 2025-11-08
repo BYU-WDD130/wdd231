@@ -13,40 +13,61 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function displayMembers(members) {
+  function displayMembers(members, view = "grid") {
     container.innerHTML = "";
+
+    // Optional: Sort members alphabetically or by membership level
+    members.sort((a, b) => a.name.localeCompare(b.name));
+
     members.forEach(member => {
       const card = document.createElement("div");
-      card.classList.add("member-card");
-      card.innerHTML = `
-        <img src="${member.image}" alt="${member.name} logo">
-        <h3>${member.name}</h3>
-        <p>${member.address}</p>
-        <p>${member.phone}</p>
-        <a href="${member.website}" target="_blank">Visit Website</a>
-        <p class="level">Membership: ${getLevelName(member.membership)}</p>
-        <p>${member.description}</p>
-      `;
+      card.classList.add("member-card", view === "list" ? "list-item" : "grid-item");
+
+      // List view format: cleaner layout with text alignment
+      if (view === "list") {
+        card.innerHTML = `
+          <div class="member-info">
+            <h3>${member.name}</h3>
+            <p><strong>Address:</strong> ${member.address}</p>
+            <p><strong>Phone:</strong> ${member.phone}</p>
+            <p><strong>Membership:</strong> ${member.membership}</p>
+            <p><strong>Description:</strong> ${member.description}</p>
+            <a href="${member.website}" target="_blank"> Visit Website</a>
+          </div>
+        `;
+      } else {
+        // Grid view format: image and compact layout
+        card.innerHTML = `
+          <img src="${member.image}" alt="${member.name} logo" loading="lazy">
+          <h3>${member.name}</h3>
+          <p class="level">${member.membership} Member</p>
+          <a href="${member.website}" target="_blank">Visit Website</a>
+        `;
+      }
+
       container.appendChild(card);
     });
-  }
-
-  function getLevelName(level) {
-    if (level === 3) return "Gold";
-    if (level === 2) return "Silver";
-    if (level === 1) return "Bronze";
-    return "Member";
   }
 
   gridBtn.addEventListener("click", () => {
     container.classList.add("grid");
     container.classList.remove("list");
+    getMembers().then(() => displayMembers(JSON.parse(localStorage.getItem("membersData") || "[]"), "grid"));
   });
 
   listBtn.addEventListener("click", () => {
     container.classList.add("list");
     container.classList.remove("grid");
+    getMembers().then(() => displayMembers(JSON.parse(localStorage.getItem("membersData") || "[]"), "list"));
   });
 
-  getMembers();
+  // Fetch and store data locally to reuse when switching views
+  async function init() {
+    const response = await fetch("data/members.json");
+    const data = await response.json();
+    localStorage.setItem("membersData", JSON.stringify(data.members));
+    displayMembers(data.members, "grid");
+  }
+
+  init();
 });
