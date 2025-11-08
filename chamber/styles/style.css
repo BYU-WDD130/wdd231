@@ -281,7 +281,7 @@ header .cta-btn {
 
 .carousel {
     display: flex;
-    justify-content: center;
+
     overflow-x: auto;
     gap: 1rem;
     padding: 1rem 0;
@@ -330,6 +330,13 @@ header .cta-btn {
 
 }
 
+p.level {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: black;
+}
+
+
 #membersContainer.list {
   display: block;
 }
@@ -340,6 +347,7 @@ header .cta-btn {
   padding: 1rem;
   text-align: center;
   background: #53494909;
+
 }
 
 .member-card img {
