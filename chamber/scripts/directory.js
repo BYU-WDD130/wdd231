@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function getLevelName(level) {
     if (level === 3) return "Gold";
     if (level === 2) return "Silver";
+    if (level === 1) return "Bronze";
     return "Member";
   }
 

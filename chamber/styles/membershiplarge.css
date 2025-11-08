@@ -1,0 +1,40 @@
+@media only screen and (min-width: 38rem) {
+
+
+
+
+.hamburger {
+  display: none;
+
+
+}
+
+.navigation {
+  
+  display: block;
+  background-color: #00274D;
+  }
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+   background-color: #00274D;      
+
+
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 20px;
+
+  .navigation.show ul {
+    display: flex;
+  }
+
+}
