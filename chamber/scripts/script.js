@@ -1,3 +1,4 @@
+// ---- CAROUSEL DRAG SCROLL ----
 const carousels = document.querySelectorAll('.carousel, .testimonial-slider');
 
 carousels.forEach(carousel => {
@@ -30,6 +31,8 @@ carousels.forEach(carousel => {
         carousel.scrollLeft = scrollLeft - walk;
     });
 });
+
+// ---- HAMBURGER MENU TOGGLE ----
 const navbutton = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
 
@@ -38,5 +41,30 @@ navbutton.addEventListener('click', () => {
   navBar.classList.toggle('show');  
 });
 
-  document.getElementById("currentyear").textContent = new Date().getFullYear();
-  document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
+// ---- FOOTER DATES ----
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
+
+// ---- QUICK LINKS CLICKABLE CARDS ----
+document.addEventListener("DOMContentLoaded", () => {
+  const quickLinks = document.querySelectorAll(".quick-links .card");
+
+  quickLinks.forEach(card => {
+    card.addEventListener("click", () => {
+      const text = card.textContent.trim();
+
+      // Match the text content with target pages
+      let target = "#";
+      if (text === "Membership") target = "membership.html";
+      else if (text === "Events") target = "events.html";
+      else if (text === "Business Directory") target = "directory.html";
+      else if (text === "Resources") target = "resources.html";
+
+      // Redirect to the selected page
+      window.location.href = target;
+    });
+
+    // Optional: make cursor indicate clickability
+    card.style.cursor = "pointer";
+  });
+});
