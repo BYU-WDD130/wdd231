@@ -1,0 +1,55 @@
+@media only screen and (min-width: 38rem) {
+
+
+
+
+.hamburger {
+  display: none;
+
+
+}
+
+.navigation {
+  
+  display: block;
+  background-color: #00274D;
+  }
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+   background-color: #00274D;      
+
+
+}
+
+
+
+
+#membersContainer.grid {
+  display: row;
+  flex-wrap:wrap;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 20px;
+
+}
+
+.member-card {
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #53494909;
+  color: black;
+  margin: 10px;
+  font-size: 15px;
+}
+
+  .navigation.show ul {
+    display: flex;
+  }
+
+}
