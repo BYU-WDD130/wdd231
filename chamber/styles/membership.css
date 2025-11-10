@@ -168,11 +168,7 @@ header .cta-btn {
     z-index: 1;
 }
 
-.hero-text {
-    position: relative;
-    z-index: 2;
-    color: #ffffff; /* white text over dark overlay */
-}
+
 
 .hero img {
     width: 100%;
@@ -186,7 +182,8 @@ header .cta-btn {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff;
+    color: #ffffff;
+    z-index: 2;
 }
 
 .hero-text h1 {

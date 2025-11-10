@@ -221,7 +221,10 @@ header .cta-btn {
     font-size: 18px;
     padding: 1px  10px 5px;
     border-radius: 5px;
+}
 
+.accent-btn:hover {
+    background-color: #a34704;
 }
 
 .resources-content {
