@@ -250,6 +250,10 @@ header nav ul li a {
     text-align: center;
 }
 
+#a {
+    text-decoration: none;
+}
+
 /* -------------------- Quick Links -------------------- */
 .quick-links .container {
     display: flex;
