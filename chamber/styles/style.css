@@ -228,9 +228,10 @@ header nav ul li a {
 /* -------------------- Carousel & Sliders -------------------- */
 .carousel{
     display: flex;
+
     overflow-x: auto;
-    gap: 2rem;
-    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
 
 
 }

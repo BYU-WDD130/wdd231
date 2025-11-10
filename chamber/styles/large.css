@@ -26,6 +26,24 @@
 
 }
 
+
+.carousel{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 1rem;
+    justify-content: center;
+
+
+}
+
+.carousel.a {
+    text-decoration: none;
+}
+
+
+
+
 .testimonial-slider {
     position: relative;
     overflow: hidden;
@@ -36,7 +54,7 @@
     border: 1px solid black;
     padding: 5px;
     margin: 5px;
-    
+
 
 }
 
