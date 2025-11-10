@@ -288,6 +288,7 @@ header .cta-btn {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    font-size: 1.6rem;
 }
 
 .event-card {
@@ -313,6 +314,8 @@ header .cta-btn {
     overflow: hidden;
     height: 100px; /* ajusta según tu contenido */
     margin: 2rem auto;
+    text-align: center;
+    align-self: auto;
 }
 
 .testimonial {
@@ -323,7 +326,7 @@ header .cta-btn {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: center;
     align-items: center;
     margin: 0 20px;
