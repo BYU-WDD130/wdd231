@@ -117,17 +117,11 @@ button:focus {
     text-decoration: none;
 
     
-
 }
 
-.navigation li.current {
-    background-color: #8f8c8c;
-}
 
-.navigation a:hover {
-    background-color: #00274D;
 
-}
+
 
 
 header nav ul {
@@ -249,7 +243,7 @@ main {
 }
 
 .btn-link {
-  background-color: #5d4037;
+  background-color: #00274D;
   color: white;
   text-decoration: none;
   padding: 0.6rem 1.2rem;
@@ -258,9 +252,7 @@ main {
   font-size: 0.95rem;
 }
 
-.btn-link:hover {
-  background-color: #3e2d26;
-}
+
 
 form {
   background-color: #ffffff;
@@ -288,7 +280,7 @@ textarea {
 }
 
 button {
-  background-color: #c2185b;
+  background-color: #bd5405;
   color: white;
   padding: 0.9rem 1.5rem;
   border: none;
@@ -370,7 +362,7 @@ footer input[type="email"] {
 
 footer button {
     padding: 0.5rem 1rem;
-    background-color: #FF6F00;
+    background-color: #bd5405;
     border: none;
     border-radius: 5px;
     color: #fff;
