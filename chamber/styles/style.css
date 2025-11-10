@@ -304,26 +304,15 @@ header .cta-btn {
     align-items: center;
 }
 
-/* -------------------- Testimonials ---------
-.testimonials {
-    padding: 2rem;
-    background-color: #F4F4F4;
-    text-align: center;
-}
+/* -------------------- Testimonials -------------------- */
 
-.testimonial-slider {
-    display: block;
-    overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem 0;
-    align-items: center;
-}
------------ */
+
 
 .testimonial-slider {
     position: relative;
     overflow: hidden;
     height: 100px; /* ajusta según tu contenido */
+    margin: 2rem auto;
 }
 
 .testimonial {
@@ -333,13 +322,23 @@ header .cta-btn {
     width: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    margin: 0 20px;
+    padding: 0;
 }
 
 .testimonial.active {
     opacity: 1;
 }
 
-
+.history {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
 
 /* -------------------- Members -------------------- */

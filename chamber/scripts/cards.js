@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const businessImages = [
     "images/fitness.jpg",
-    "images/Bakery.jpg",
-    "images/downtown.jpg"
+    "images/redrosede.jpg",
+    "images/technova.jpg"
   ];
   businessCards.forEach((businessCard, index) => {
     const img = document.createElement("img");
