@@ -1,3 +1,4 @@
+/* -------------------- Reset -------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* -------------------- Header -------------------- */
 header {
     position: sticky;
     top: 0;
@@ -37,26 +38,26 @@ header .logo {
 .logo img {
     border-radius: 50px;
 }
+
 /* Hamburger Menu */
 #ham-btn.hamburger {
-  color: rgb(243, 236, 236);
-  border: none;
-  border-radius: 5px;
-  padding: 10px 1px;
-  margin-right: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.2s;
+    color: rgb(243, 236, 236);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 1px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
 }
 
 button:hover {
-
-  outline: 2px solid whitesmoke;
+    outline: 2px solid whitesmoke;
 }
 
 button:focus {
-  outline: 2px solid white;
-  outline-offset: 2px;
+    outline: 2px solid white;
+    outline-offset: 2px;
 }
 
 .hamburger {
@@ -72,50 +73,36 @@ button:focus {
 .hamburger::before {
     content: "\2630";
     font-size: 2rem;
-
 }
 
 .hamburger.show::before {
     content: "\2715";
     font-size: 2rem;
-
 }
 
-
-/*navigation */
-
+/* Navigation */
 .navigation {
-
     display: none;
-
-
 }
 
-.navigation.show{
+.navigation.show {
     display: block;
-    
-
 }
 
 .navigation ul {
     display: block;
-   list-style-type: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     color: white;
-   background-color: #00274D;      
-
-
+    background-color: #00274D;
 }
 
 .navigation a {
     display: block;
-    padding: .8rem 10px;
+    padding: 0.8rem 10px;
     color: white;
     text-decoration: none;
-
-    
-
 }
 
 .navigation li.current {
@@ -124,7 +111,6 @@ button:focus {
 
 .navigation a:hover {
     background-color: #00274D;
-
 }
 
 .front {
@@ -132,15 +118,12 @@ button:focus {
     margin: 1rem;
     font-size: 2rem;
     font-family: 'Merriweather', serif;
-
-    
 }
 
 header nav ul {
     display: flex;
     list-style: none;
     gap: 1rem;
-
 }
 
 header nav ul li a {
@@ -158,7 +141,7 @@ header .cta-btn {
     text-decoration: none;
 }
 
-/* Hero */
+/* -------------------- Hero -------------------- */
 .hero {
     position: relative;
 }
@@ -170,12 +153,9 @@ header .cta-btn {
     left: 0;
     width: 100%;
     height: 99%;
-    background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
-
-
-
 
 .hero img {
     width: 100%;
@@ -190,7 +170,7 @@ header .cta-btn {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
-    color: #ffffff; /* white text over dark overlay */
+    color: #ffffff;
 }
 
 .hero-text h1 {
@@ -214,22 +194,18 @@ header .cta-btn {
     font-family: 'Roboto Slab', serif;
 }
 
-
 .primary-btn {
     background-color: #00274D;
     color: #fff;
 }
-
-
 
 .accent-btn {
     background-color: #bd5405;
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-    padding: 1px  10px 5px;
+    padding: 1px 10px 5px;
     border-radius: 5px;
-
 }
 
 .accent-btn:hover {
@@ -241,13 +217,30 @@ header .cta-btn {
     color: #ffffff;
 }
 
-.carousel.a{
+/* -------------------- Carousel & Sliders -------------------- */
+.carousel, .testimonial-slider {
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.carousel.a {
     text-decoration: none;
 }
 
-.carousel, .testimonial-slider { overflow-x: auto; gap: 1rem; }
+.carousel {
+    display: flex;
+    padding: 1rem 0;
+}
 
-/* Quick Links */
+.business-card, .testimonial {
+    min-width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* -------------------- Quick Links -------------------- */
 .quick-links .container {
     display: flex;
     justify-content: center;
@@ -273,13 +266,13 @@ header .cta-btn {
 }
 
 .quick-links .card img {
-  height: 144px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
+    height: 144px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
 }
 
-/* Events */
+/* -------------------- Events -------------------- */
 .events {
     padding: 2rem;
     text-align: center;
@@ -298,71 +291,96 @@ header .cta-btn {
 }
 
 .event-card {
-   
     background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
-
     text-align: center;
 }
 
-/* Featured Businesses */
+/* -------------------- Featured Businesses -------------------- */
 .featured-businesses {
     padding: 2rem;
     text-align: center;
     align-items: center;
 }
 
-
-.carousel {
-    display: flex;
-
-    overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem 0;
-}
-
-.business-card {
-    min-width: 250px;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-}
-
-
-
-/* Testimonials */
+/* -------------------- Testimonials ---------
 .testimonials {
     padding: 2rem;
     background-color: #F4F4F4;
     text-align: center;
-
 }
 
 .testimonial-slider {
     display: block;
-
     overflow-x: auto;
     gap: 1rem;
     padding: 1rem 0;
     align-items: center;
 }
+----------- */
 
-.testimonial {
-    min-width: 250px;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 1rem;
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    height: 100px; /* ajusta según tu contenido */
 }
 
-/* MEMBERS*/
+.testimonial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 
+.testimonial.active {
+    opacity: 1;
+}
+
+
+
+
+/* -------------------- Members -------------------- */
 #membersContainer.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin: 20px;
     justify-content: center;
+}
+
+#membersContainer.list {
+    display: block;
+}
+
+.member-card {
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    background: rgba(83, 73, 73, 0.05);
+    color: black;
+    margin: 10px;
+}
+
+.member-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.list .member-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.list .member-card img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
 }
 
 p.level {
@@ -371,63 +389,28 @@ p.level {
     color: black;
 }
 
-
-#membersContainer.list {
-  display: block;
-}
-
-.member-card {
-  font-weight: bold;
-  border: solid 1px black;
-  border-radius: 10px;
-  padding: 1rem;
-  background: #53494909;
-  color: black;
-  margin: 10px;
-
-}
-
-.member-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.list .member-card {
-  display: flex;
-  align-items: center;
-  text-align: left;
-}
-
-.list .member-card img {
-  width: 100px;
-  height: 100px;
-  margin-right: 1rem;
-}
-
 .view-toggle {
-  text-align: center;
-  margin: 1rem 0;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 .view-toggle button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-  background-color: white;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 .view-toggle button.active {
-  background-color: #00274D;
- 
+    background-color: #00274D;
 }
-/* Footer */
+
+/* -------------------- Footer -------------------- */
 footer {
     background-color: #00274D;
     color: #fff;
@@ -455,7 +438,7 @@ footer input[type="email"] {
 
 footer button {
     padding: 0.5rem 1rem;
-    background-color: #bd5405 ;
+    background-color: #bd5405;
     border: none;
     border-radius: 5px;
     color: #fff;

@@ -68,3 +68,22 @@ document.addEventListener("DOMContentLoaded", () => {
     card.style.cursor = "pointer";
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const testimonials = document.querySelectorAll(".testimonial");
+    let current = 0;
+
+    // Mostrar el primer testimonio
+    testimonials[current].classList.add("active");
+
+    setInterval(() => {
+        // Ocultar el testimonio actual
+        testimonials[current].classList.remove("active");
+
+        // Pasar al siguiente (circular)
+        current = (current + 1) % testimonials.length;
+
+        // Mostrar el siguiente testimonio
+        testimonials[current].classList.add("active");
+    }, 5000); // cada 5000ms = 5 segundos
+});
