@@ -212,7 +212,7 @@ header .cta-btn {
 }
 
 .accent-btn {
-    background-color: #FF6F00;
+    background-color: #bd5405;
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -221,6 +221,14 @@ header .cta-btn {
 
 }
 
+.accent-btn:hover {
+    background-color: #a34704;
+}
+
+.cta-btn {
+    background-color: #bd5405;
+    color: #ffffff;
+}
 
 
 
