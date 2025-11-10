@@ -101,7 +101,7 @@ button:focus {
 .navigation a {
     display: block;
     padding: 0.8rem 10px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -170,13 +170,22 @@ header .cta-btn {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
-    color: #ffffff;
+    color: white;
 }
 
 .hero-text h1 {
     font-family: 'Merriweather', serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+.hero-text::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5); /* semi-negro */
+    z-index: -1;
 }
 
 .hero-buttons {
