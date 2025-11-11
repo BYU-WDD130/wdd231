@@ -94,7 +94,7 @@ button:focus {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #ffffff;
     background-color: #00274D;
 }
 
@@ -103,6 +103,7 @@ button:focus {
     padding: 0.8rem 10px;
     color: #ffffff;
     text-decoration: none;
+    background-color: #00274D;
 }
 
 
