@@ -164,7 +164,8 @@ header nav ul li a {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
-    color: white;
+    color: #ffffff;
+    background-color: #00274D;
 }
 
 
