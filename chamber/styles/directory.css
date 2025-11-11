@@ -240,84 +240,11 @@ header .cta-btn {
     color: #ffffff;
 }
 
-.carousel.a{
-    text-decoration: none;
-}
-
-/* Quick Links */
-.quick-links .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-    gap: 1rem;
-    align-items: center;
-}
-
-.quick-links .card {
-    background-color: #fff;
-    flex: 1 1 100px;
-    text-align: center;
-    padding: 1rem;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.quick-links .card:hover {
-    transform: translateY(-5px);
-}
-
-.quick-links .card img {
-  height: 144px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-}
-
-/* Events */
-.events {
-    padding: 2rem;
-    text-align: center;
-}
-
-.events h2 {
-    font-family: 'Merriweather', serif;
-    margin-bottom: 1rem;
-}
-
-.events-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.event-card {
-   
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-
-    text-align: center;
-}
-
-/* Featured Businesses */
-.featured-businesses {
-    padding: 2rem;
-    text-align: center;
-    align-items: center;
-}
 
 
-.carousel {
-    display: flex;
 
-    overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem 0;
-}
+
+
 
 .business-card {
     min-width: 250px;
@@ -329,46 +256,6 @@ header .cta-btn {
 
 
 
-/* Testimonials */
-.testimonials {
-    padding: 2rem;
-    background-color: #F4F4F4;
-    text-align: center;
-
-}
-
-.testimonial-slider {
-    display: block;
-
-    overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem 0;
-    align-items: center;
-}
-
-.testimonial {
-    min-width: 250px;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 1rem;
-}
-
-/* MEMBERS*/
-
-#membersContainer.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin: 20px;
-    justify-content: center;
-
-
-}
-
-p.level {
-    font-weight: bold;
-    margin-top: 0.5rem;
-    color: black;
-}
 
 
 #membersContainer.list {
