@@ -129,7 +129,7 @@ header nav ul li a {
 
 .header  {
     background-color: #FF6F00;
-    color: #fff;
+    color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-family: 'Roboto Slab', serif;
@@ -261,7 +261,7 @@ header nav ul li a {
 }
 
 .quick-links .card {
-    background-color: #fff;
+    background-color: #ffffff;
     flex: 1 1 100px;
     text-align: center;
     padding: 1rem;
@@ -303,7 +303,7 @@ header nav ul li a {
 }
 
 .event-card {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -410,7 +410,7 @@ p.level {
 /* -------------------- Footer -------------------- */
 footer {
     background-color: #00274D;
-    color: #fff;
+    color: #ffffff;
     padding: 2rem;
 }
 
@@ -440,7 +440,7 @@ footer button {
     background-color: #bd5405;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .sitemap {
