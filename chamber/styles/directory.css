@@ -50,14 +50,11 @@ header .logo {
 }
 
 button:hover {
+   cursor: pointer;
 
-  outline: 2px solid #ffffff;
 }
 
-button:focus {
-  outline: 2px solid #ffffff;
-  outline-offset: 2px;
-}
+
 
 .hamburger {
     background: none;
@@ -111,7 +108,6 @@ button:focus {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: #ffffff;
     text-decoration: none;
 
 }
@@ -125,7 +121,6 @@ header nav ul li a {
   background-color: #00274D;
 }
 
-.navigation a:hover,
 .navigation a:focus {
   background-color: #FF6F00; /* color de acento */
   color: #ffffff;
@@ -139,18 +134,8 @@ header nav ul li a {
 }
 
 
-header nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
 
-}
 
-header nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
-}
 
 header .cta-btn {
     background-color: #FF6F00;
@@ -326,7 +311,7 @@ header .cta-btn {
 /* Footer */
 footer {
     background-color: #00274D;
-    color: #fff;
+    color: #ffffff;
     padding: 2rem;
 }
 
