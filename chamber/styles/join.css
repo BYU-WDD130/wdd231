@@ -300,6 +300,12 @@ button {
 
 }
 
+.cards h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Merriweather', serif;
+}
+
 .membership-card {
   background: #fff;
   padding: 1.5rem;
