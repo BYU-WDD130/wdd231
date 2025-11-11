@@ -84,7 +84,7 @@
     <input type="text" id="name" name="firstName" autocomplete="given-name" title="Enter your name" required >
 
     <label for="last">Last Name </label>
-    <input type="text" id="last" name="lastName" autocomplete="family-name" >
+    <input type="text" id="last" name="lastName" autocomplete="family-name" title="Enter your last name" required>
 
     <label for="phone">Email*</label>
     <input type="email" id="email" name="email" autocomplete="email" placeholder="example@email.com" title="Enter a valid email address" required >
@@ -92,7 +92,11 @@
     <label for="phone">Mobile Phone*</label>
     <input type="tel" id="phone" name="phone" autocomplete="tel" title="Enter your mobile phone number" required >
 
-        <label for="business">Business/Organization Name</label>
+    <label for="title">Organization Title</label>
+    <input type="text" id="title" name="organizationTitle" autocomplete="organization-title" 
+    placeholder="Your job title" title="Enter your position or title in the organization" required>
+
+    <label for="business">Business/Organization Name</label>
     <input type="text" id="business" name="businessName" autocomplete="organization"
     pattern="[A-Za-z\s\-]{7,}" placeholder="Minimum 7 letters" title="Enter your business or organization name" required >
 
