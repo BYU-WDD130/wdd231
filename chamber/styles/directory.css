@@ -26,7 +26,7 @@ header {
     padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
-    color: #fff;
+    color: #ffffff;
 }
 
 header .logo {
@@ -102,7 +102,7 @@ button:focus {
    list-style-type: none;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #ffffff;
    background-color: #00274D;      
 
 
@@ -111,16 +111,14 @@ button:focus {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 
     
 
 }
 
-.navigation li.current {
-    background-color: #8f8c8c;
-}
+
 
 .navigation a:hover {
     background-color: #00274D;
