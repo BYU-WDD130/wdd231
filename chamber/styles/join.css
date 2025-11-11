@@ -295,6 +295,14 @@ button {
 .cards h2 {
   margin-bottom: 1rem;
   font-family: 'Merriweather', serif;
+
+  
+}
+  .membership-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+    
 }
 
 .membership-card {
