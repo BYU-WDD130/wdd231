@@ -1,0 +1,455 @@
+/* -------------------- Reset -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    background-color: #F4F4F4;
+    line-height: 1.6;
+}
+
+/* -------------------- Header -------------------- */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #00274D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    color: #fff;
+}
+
+header .logo {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+}
+
+.logo img {
+    border-radius: 50px;
+}
+
+/* Hamburger Menu */
+#ham-btn.hamburger {
+    color: rgb(243, 236, 236);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 1px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    outline: 2px solid whitesmoke;
+}
+
+button:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.hamburger {
+    background: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #00274D;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\2715";
+    font-size: 2rem;
+}
+
+/* Navigation */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #00274D;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+.front {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.header  {
+    background-color: #FF6F00;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+}
+
+/* -------------------- Hero -------------------- */
+.hero {
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+}
+
+
+.hero-text::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5); /* semi-negro */
+    z-index: -1;
+}
+
+
+.hero-text h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-buttons .btn {
+    margin: 0.5rem;
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+.primary-btn {
+    background-color: #00274D;
+    color: #fff;
+}
+
+.accent-btn {
+    background-color: #bd5405;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 1px 10px 5px;
+    border-radius: 5px;
+}
+
+.accent-btn:hover {
+    background-color: #a34704;
+}
+
+
+
+/* -------------------- Carousel & Sliders -------------------- */
+.carousel{
+    display: flex;
+
+    overflow-x: auto;
+    gap: 1rem;
+    justify-content: center;
+
+
+}
+
+.carousel.a {
+    text-decoration: none;
+}
+
+
+.business-card, .testimonial {
+    min-width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#a {
+    text-decoration: none;
+}
+
+/* -------------------- Quick Links -------------------- */
+.quick-links .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.quick-links .card {
+    background-color: #fff;
+    flex: 1 1 100px;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.quick-links .card:hover {
+    transform: translateY(-5px);
+}
+
+.quick-links .card img {
+    height: 144px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/* -------------------- Events -------------------- */
+.events {
+    padding: 2rem;
+    text-align: center;
+}
+
+.events h2 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1rem;
+}
+
+.events-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1.6rem;
+}
+
+.event-card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* -------------------- Featured Businesses -------------------- */
+.featured-businesses {
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+/* -------------------- Testimonials -------------------- */
+
+
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    height: 100px; /* ajusta según tu contenido */
+    text-align: center;
+    align-self: auto;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 2rem auto;
+
+}
+
+.testimonial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    
+
+}
+
+
+.testimonial.active {
+    opacity: 1;
+}
+
+.history {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+/* -------------------- Members -------------------- */
+#membersContainer.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 20px;
+    justify-content: center;
+}
+
+
+
+
+
+
+.list .member-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.list .member-card img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+p.level {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: black;
+}
+
+
+
+.view-toggle button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.view-toggle button.active {
+    background-color: #00274D;
+}
+
+/* -------------------- Footer -------------------- */
+footer {
+    background-color: #00274D;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+
+.footer-container h3 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0.5rem;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #bd5405;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.sitemap {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+#LastModified {
+    text-align: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
