@@ -114,11 +114,24 @@ button:focus {
     color: #ffffff;
     text-decoration: none;
 
-    
-
 }
 
+/*----------------------------CORRECTIONS-----------------------------*/
+nav.navigation,
+.navigation ul,
+.navigation a,
+header nav ul li a {
+  color: #ffffff;
+  background-color: #00274D;
+}
 
+.navigation a:hover,
+.navigation a:focus {
+  background-color: #FF6F00; /* color de acento */
+  color: #ffffff;
+}
+
+/*----------------------------END CORRECTIONS-----------------------------*/
 
 .navigation a:hover {
     background-color: #00274D;
