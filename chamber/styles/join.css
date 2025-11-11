@@ -281,19 +281,11 @@ button {
   font-size: 1rem;
 }
 
-
-
-.success {
-  color: green;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
 /* Membership Cards */
 
 #cards.grid {
-  display: grid;
+  display: flex;
+    flex-wrap: wrap;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin: 2rem 0;
@@ -301,7 +293,6 @@ button {
 }
 
 .cards h2 {
-  text-align: center;
   margin-bottom: 1rem;
   font-family: 'Merriweather', serif;
 }
