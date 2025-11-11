@@ -180,7 +180,7 @@ header .cta-btn {
     text-align: center;
     z-index: 2;
     color: #ffffff; /* white text over dark overlay */
-    
+    background-color: #00274D;
 }
 
 .hero-text h1 {
