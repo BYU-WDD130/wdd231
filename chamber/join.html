@@ -86,7 +86,7 @@
     <label for="last">Last Name </label>
     <input type="text" id="last" name="lastName" autocomplete="family-name" title="Enter your last name" required>
 
-    <label for="phone">Email*</label>
+    <label for="email">Email*</label>
     <input type="email" id="email" name="email" autocomplete="email" placeholder="example@email.com" title="Enter a valid email address" required >
 
     <label for="phone">Mobile Phone*</label>
@@ -100,6 +100,7 @@
     <input type="text" id="business" name="businessName" autocomplete="organization"
     pattern="[A-Za-z\s\-]{7,}" placeholder="Minimum 7 letters" title="Enter your business or organization name" required >
 
+ 
     <input type="hidden" name="timestamp" id="timestamp">
 
 
@@ -114,8 +115,10 @@
 
     </select>
 
-    <label for="message">Business/Organization description </label>
-    <textarea id="message" name="message" rows="5" placeholder="Include flavors, quantity, colors, allergies, etc."></textarea>
+    <label for="description">Organization Description</label>
+    <textarea id="description" name="organizationDescription" rows="4" 
+          placeholder="Briefly describe your organization" 
+          title="Provide a brief description of your organization" required></textarea>
 
     <button type="submit">Join Us</button>
 
