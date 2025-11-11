@@ -36,8 +36,6 @@ header .logo {
     font-size: 1.5rem;
 }
 
-.hidden {display:none;}
-
 .logo img {
     border-radius: 50px;
 }
@@ -180,7 +178,7 @@ header .cta-btn {
     text-align: center;
     color: #ffffff;
     z-index: 2;
-    background-color: #00274D;
+    background-color: #00274D; 
 }
 
 .hero-text h2 {
@@ -230,6 +228,9 @@ main {
 
 }
 
+.hidden {
+    display: none;
+}
 
 .nav-buttons {
   display: flex;
@@ -308,6 +309,7 @@ button {
 .membership-card {
   background: #fff;
   padding: 1.5rem;
+  border-radius: 1rem;
   border: 1px solid #161414;
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
