@@ -32,7 +32,7 @@ function displayResults(data) {
     myTown.textContent = data.name;
     myDescription.innerHTML = data.weather[0].description;
     myTemperature.innerHTML = data.main.temp.toFixed(0);
-    currentTemp.textContent = `${data.main.temp.}&deg;F`
+    currentTemp.textContent = `${data.main.temp.}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}@2x.png`;
     myGraphic.setAttribute('SRC', iconsrc)
     myGraphic.setAttribute('alt', data.weather[0].description)
