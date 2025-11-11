@@ -51,11 +51,11 @@ header .logo {
 
 button:hover {
 
-  outline: 2px solid whitesmoke;
+  outline: 2px solid #ffffff;
 }
 
 button:focus {
-  outline: 2px solid white;
+  outline: 2px solid #ffffff;
   outline-offset: 2px;
 }
 
@@ -141,7 +141,7 @@ header nav ul li a {
 
 header .cta-btn {
     background-color: #FF6F00;
-    color: #fff;
+    color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-family: 'Roboto Slab', serif;
@@ -219,7 +219,7 @@ header .cta-btn {
 
 .accent-btn {
     background-color: #bd5405;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     padding: 1px  10px 5px;
@@ -303,7 +303,7 @@ header .cta-btn {
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .view-toggle button.active {
@@ -341,7 +341,7 @@ footer button {
     background-color: #bd5405;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .sitemap {
