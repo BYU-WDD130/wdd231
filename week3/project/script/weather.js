@@ -35,7 +35,7 @@ function displayResults(data) {
     currentTemp.textContent = `${data.main.temp.}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}@2x.png`;
     myGraphic.setAttribute('SRC', iconsrc)
-    myGraphic.setAttribute('alt', data.weather[0].description)
+    myGraphic.setAttribute('alt', data.weather[0].description);
 
 }
 
