@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    .form-and-cards {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: flex-start;
+}
+    form { 
+        flex: 1; 
+    }
+    .membership-cards { 
+        flex: 1; flex-direction: column; margin: 0; }
+}
