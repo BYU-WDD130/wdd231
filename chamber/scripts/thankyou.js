@@ -5,3 +5,4 @@
         document.getElementById('phone').textContent = params.get('phone') || '';
         document.getElementById('businessName').textContent = params.get('businessName') || '';
         document.getElementById('timestamp').textContent = params.get('timestamp') || '';
+

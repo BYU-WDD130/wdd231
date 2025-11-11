@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/membershiplarge.css">    
     <script src="scripts/script.js" defer></script>    
     <script src="scripts/members.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
 
 
@@ -76,17 +77,25 @@
   </div>
 
   <form action="thankyou.html" method="get">
-    <label for="name">Full Name *</label>
-    <input type="text" id="name" name="name" required />
 
-    <label for="email">Email Address *</label>
-    <input type="email" id="email" name="email" required />
+    <label for="firstName">First Name *</label>
+    <input type="text" id="name" name="firstName" required />
 
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone" />
+    <label for="LastName">Last Name </label>
+    <input type="text" id="last" name="lastName" />
 
-    <label for="date">Date of your birth *</label>
-    <input type="date" id="date" name="date" required />
+    <label for="phone">Email*</label>
+    <input type="email" id="email" name="email"autocomplete="email" placeholder="example@email.com" required />
+
+    <label for="phone">Mobile Phone*</label>
+    <input type="tel" id="phone" name="phone" autocomplete="tel" />
+
+        <label for="businessName">Business/Organization Name</label>
+    <input type="text" id="business" name="businessName" autocomplete="organization-title"
+    pattern="[A-Za-z\s\-]{7,}" placeholder="Minimum 7 letters" />
+
+    <input type="hidden" name="timestamp" id="timestamp">
+
 
     <label for="dessert">Membership Level *</label>
     <select id="dessert" name="dessert" required>
@@ -99,7 +108,7 @@
 
     </select>
 
-    <label for="message">Organization description </label>
+    <label for="message">Business/Organization description </label>
     <textarea id="message" name="message" rows="5" placeholder="Include flavors, quantity, colors, allergies, etc."></textarea>
 
     <button type="submit">Join Us</button>
@@ -113,8 +122,6 @@
 
   </main>
     
-
-
 
     <footer>
         <div class="footer-container">
@@ -139,6 +146,6 @@
     </footer>
 
     <!-- JS -->
-    <script src="scripts/cards.js" defer></script>
+   
 </body>
 </html>

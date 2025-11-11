@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Match the text content with target pages
       let target = "#";
-      if (text === "Membership") target = "membership.html";
+      if (text === "Membership") target = "join.html";
       else if (text === "Events") target = "events.html";
       else if (text === "Business Directory") target = "directory.html";
       else if (text === "Resources") target = "resources.html";
