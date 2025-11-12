@@ -1,5 +1,5 @@
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
+const weatherIcon = document.querySelector('#weatherIcon');
 const captionDesc = document.querySelector('figcaption'); 
 
 // Trier, Germany coordinates
@@ -32,11 +32,11 @@ function displayResults(data) {
   console.log('hello')
 
  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
- const iconsrc = `https://openweathermap.org/img/w/${data.weather[0]}.icon}@2x.png`
+ const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}@2x.png`
  let desc = data.weather[0].description;
  weatherIcon.setAttribute('src', iconsrc)
  weatherIcon.setAttribute('alt', data.weather[0].description)
-   captionDesc.textContent = `${desc}`;
+captionDesc.textContent = `${desc}`;
 }
 
 apiFetch();
