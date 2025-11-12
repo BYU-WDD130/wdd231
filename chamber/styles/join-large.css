@@ -10,17 +10,18 @@
 }
 
 .navigation {
-  
+
   display: block;
   background-color: #00274D;
   }
 
 .navigation ul {
     display: flex;
+
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #ffffff;
    background-color: #00274D;      
 
 

@@ -102,7 +102,7 @@ button:focus {
    list-style-type: none;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #ffffff;
    background-color: #00274D;      
 
 
@@ -111,7 +111,7 @@ button:focus {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 
     
@@ -235,7 +235,7 @@ main {
 
 .btn-link {
   background-color: #00274D;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   padding: 0.6rem 1.2rem;
   border-radius: 5px;
