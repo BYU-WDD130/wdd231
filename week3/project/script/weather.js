@@ -28,6 +28,7 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
+  console.log('hello');
   myTown.textContent = data.name;
   myDescription.textContent = data.weather[0].description;
   myTemperature.innerHTML = `${data.main.temp.toFixed(0)}°F`;
