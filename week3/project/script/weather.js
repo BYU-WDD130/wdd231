@@ -9,7 +9,7 @@ const myLat = 49.75;
 const myLong = 6.63;
 
 // OpenWeatherMap API URL
-const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&units=imperial&appid=${myKey}`;
+const myUrl = `https//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}appid=${myKey}`;
 
 
 async function apiFetch() {
@@ -33,7 +33,7 @@ function displayResults(data) {
   myTemperature.innerHTML = `${data.main.temp.toFixed(0)}°F`;
 
   const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  myGraphic.setAttribute('SRC', iconSrc);
+  myGraphic.setAttribute('src', iconSrc);
   myGraphic.setAttribute('alt', data.weather[0].description);
 }
 
