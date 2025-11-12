@@ -1,6 +1,9 @@
+
+const myTown = document.querySelector('#town')
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weatherIcon');
 const captionDesc = document.querySelector('figcaption'); 
+
 
 // Trier, Germany coordinates
 const myKey = 'f3849d6e217234d7429486bdaab8f5bb'; 
@@ -16,7 +19,7 @@ async function apiFetch() {
     const response = await fetch(myUrl);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
+      //console.log(data); // testing only
      displayResults(data); // uncomment when ready
     } else {
         throw Error(await response.text());
@@ -27,14 +30,16 @@ async function apiFetch() {
 }
 
 
+
 function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}@2x.png`;
-  let desc = data.weather[0].description;
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', data.weather[0].description);
 
 
+    currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
+const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', 'weather icon');
+    captionDesc.textContent = `${data.weather[0].description} `;
+    myTown.innerHTML = data.name
 }
 
 apiFetch();
