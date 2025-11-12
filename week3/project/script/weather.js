@@ -4,7 +4,7 @@ const myTemperature = document.querySelector('#temperature');
 const myGraphic = document.querySelector('#graphic'); 
 
 // Trier, Germany coordinates
-const myKey = 'f3849d6e217234d7429486bdaab8f5bb'; 
+const myKey = '4ac296a5f6369d6a2fa3671432ec2fc4'; 
 const myLat = 49.75;
 const myLong = 6.63;
 
