@@ -5,8 +5,8 @@ const myGraphic = document.querySelector('#graphic');
 
 // Trier, Germany coordinates
 const myKey = 'f3849d6e217234d7429486bdaab8f5bb'; 
-const lat = 49.75;
-const long = 6.63;
+const myLat = 49.75;
+const myLong = 6.63;
 
 // OpenWeatherMap API URL
 const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&units=imperial&appid=${myKey}`;
