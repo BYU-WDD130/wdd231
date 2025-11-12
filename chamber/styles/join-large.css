@@ -27,6 +27,17 @@
 }
 
 
+.membership-title {
+    text-align: center;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: black;
+    padding: 0;
+    margin: auto;
+   
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
