@@ -1,6 +1,8 @@
 
 .card {
-    border: 1px solid black;
-    background-color: blueviolet;
-    font-size: rem;
+    border: 1px solid #5d6f67;
+    background-color: #f6f0da;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
 }
