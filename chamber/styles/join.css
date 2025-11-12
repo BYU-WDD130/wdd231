@@ -292,19 +292,15 @@ button {
 
 }
 
-.cards h2 {
-  margin-bottom: 1rem;
-  font-family: 'Merriweather', serif;
 
-  
-}
-  .membership-title {
+.membership-title {
     text-align: center;
     width: 100%;
     font-family: 'Merriweather', serif;
     font-size: 2rem;
-    margin-bottom: 1rem;
     color: black;
+    
+
     
 }
 
