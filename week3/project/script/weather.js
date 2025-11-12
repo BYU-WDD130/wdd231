@@ -9,7 +9,7 @@ const lat = 49.75;
 const long = 6.63;
 
 // OpenWeatherMap API URL
-const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial=`;
+const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&units=imperial&appid=${myKey}`;
 
 
 async function apiFetch() {
