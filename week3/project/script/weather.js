@@ -4,12 +4,12 @@ const myTemperature = document.querySelector('#temperature');
 const myGraphic = document.querySelector('#graphic'); 
 
 // Trier, Germany coordinates
-const myKey = '4ac296a5f6369d6a2fa3671432ec2fc4'; 
+const myKey = 'f3849d6e217234d7429486bdaab8f5bb'; 
 const myLat = 49.75;
 const myLong = 6.63;
 
 // OpenWeatherMap API URL
-const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}appid=${myKey}`;
+const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}appid=imperial&appid=${myKey}`;
 
 
 async function apiFetch() {
