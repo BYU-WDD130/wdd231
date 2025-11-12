@@ -127,13 +127,13 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: 600;
 }
 
 header .cta-btn {
     background-color: #FF6F00;
-    color: #fff;
+    color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-family: 'Roboto Slab', serif;
@@ -206,7 +206,7 @@ header .cta-btn {
 
 .accent-btn {
     background-color: #bd5405;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     padding: 1px  10px 5px;
@@ -272,7 +272,7 @@ textarea {
 
 button {
   background-color: #bd5405;
-  color: white;
+  color: #ffffff;
   padding: 0.9rem 1.5rem;
   border: none;
   border-radius: 5px;
@@ -304,7 +304,7 @@ button {
 }
 
 .membership-card {
-  background: #fff;
+  background: #ffffff;
   padding: 1.5rem;
   border: 1px solid #161414;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -357,7 +357,7 @@ footer button {
     background-color: #bd5405;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .sitemap {
