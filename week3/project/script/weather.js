@@ -13,7 +13,7 @@ const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLo
 
 async function apiFetch() {
   try {
-    const response = await fetch(myurl);
+    const response = await fetch(myUrl);
     if (response.ok) {
       const data = await response.json();
       console.log(data); // testing only
