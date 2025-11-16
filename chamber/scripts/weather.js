@@ -1,7 +1,7 @@
 const myTown = document.querySelector('#town')
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weatherIcon');
-const captionDesc = document.querySelector('figcaption'); 
+const captionDesc = document.querySelector('#weatherDesc');
 
 
 // Trier, Germany coordinates

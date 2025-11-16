@@ -79,10 +79,10 @@
     <section class="quick-links">
         <h2 class="front">Quick links</h2>
         <div class="container">
-            <div class="card" href="members.html"><p>Membership</p></div>
-            <div class="card" href="events.html"><p>Events</p></div>
-            <div class="card" href="directory.html"><p>Business Directory</p></div>
-            <div class="card" href="resources.html"><p>Resources</p></div>
+            <a class="card" href="members.html"><p>Membership</p></a>
+            <a class="card" href="events.html"><p>Events</p></a>
+            <a class="card" href="directory.html"><p>Business Directory</p></a>
+            <a class="card" href="resources.html"><p>Resources</p></a>
             
         </div>
     </section>
@@ -120,10 +120,12 @@
 <section class="weather-container">
 <div class="card1">
    <p id="town"></p>
-  <figure>   
-    <img id="weatherIcon" src="" alt="" >
-   <figcaption></figcaption>  
+  <figure clas="weather-figure">   
+<img id="weatherIcon" src="images/placeholder.png" alt="Weather icon" loading="lazy">
+   <figcaption>
+    <p id="weatherDesc"></p>
     <p id="current-temp"></p>
+   </figcaption>   
   </figure>
 </div>
 </section>
