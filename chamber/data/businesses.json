@@ -1,0 +1,30 @@
+
+  [
+    {
+      "name": "City Fitness Center",
+      "address": "789 Wellness Ave, Newark, NJ",
+      "phone": "(973) 555-8765",
+      "website": "https://cityfitness.com",
+      "image": "images/fitnees.jpg",
+      "membership": "Gold",
+      "description": "Affordable fitness memberships and personal training."
+    },
+        {
+      "name": "Red Rose Desserts",
+      "address": "123 Shine Blvd, Newark, NJ",
+      "phone": "(862) 846-4408",
+      "website": "https://byu-wdd130.github.io/wdd131/project/index.html",
+      "image": "images/redroses.jpg",
+      "membership": "Gold",
+      "description": "Local bakery crafting elegant, handmade desserts for all occasions."
+    },
+    {
+      "name": "Rose Florist",
+      "address": "654 Bloom St, Newark, NJ",
+      "phone": "(973) 555-9876",
+      "website": "https://roseflorist.com",
+      "image": "images/rosees.jpg",
+      "membership": "Silver",
+      "description": "Family-owned flower shop with delivery across Essex County."
+    }
+  ]

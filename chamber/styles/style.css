@@ -208,7 +208,6 @@ header nav ul li a {
 /* -------------------- Carousel & Sliders -------------------- */
 .carousel{
     display: flex;
-
     overflow-x: auto;
     gap: 1rem;
     justify-content: center;
@@ -228,6 +227,20 @@ header nav ul li a {
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
+}
+
+.membership-tag {
+    font-size: 0.9rem;
+    background: #eee;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.membership-tag strong {
+    color: #c28b00; /* dorado */
 }
 
 #a {
@@ -406,7 +419,7 @@ p.level {
   background-color: rgb(50, 232, 245);
   border: 1px solid black;
   padding: 1rem 1rem 1rem;
- text-align: center;
+  text-align: center;
   border-radius: 10px;
 
 
