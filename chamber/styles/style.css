@@ -392,18 +392,22 @@ p.level {
 
 /*-------------WEATHER--------------*/
 .weather-container {
-   display: block;
-   flex-direction: column;
-   max-width: 250px;
-   align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #333;
+  width: fit-content;
+  margin: 1rem auto;
+  
 
 }
 .card1 {
+
+  align-items: center;
   background-color: rgb(50, 232, 245);
   border: 1px solid black;
-
   padding: 1rem 1rem 1rem;
-  text-align: center;
+ text-align: center;
+  border-radius: 10px;
 
 
 }
