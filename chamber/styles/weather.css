@@ -1,0 +1,20 @@
+
+.cardw {
+  background-color: aquamarine;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem 1rem 1rem;
+  text-align: center;
+
+}
+
+.cardw #current-temp {
+    font-size: 2rem;
+    margin: .3rem 0;
+}
+
+#town {
+    font-size: 1.2rem;
+    color: #072724;
+    
+}
