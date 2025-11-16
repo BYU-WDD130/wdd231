@@ -106,6 +106,10 @@ header nav ul {
     gap: 1rem;
 }
 
+.front {
+    text-align: center;}
+
+
 header nav ul li a {
     font-weight: 600;
 }
