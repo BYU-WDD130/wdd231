@@ -49,12 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  gridBtn.addEventListener("click", () => {
-    container.classList.add("grid");
-    container.classList.remove("list");
-    getMembers().then(() => displayMembers(JSON.parse(localStorage.getItem("membersData") || "[]"), "grid"));
-  });
-
   listBtn.addEventListener("click", () => {
     container.classList.add("list");
     container.classList.remove("grid");
