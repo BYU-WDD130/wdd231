@@ -241,7 +241,8 @@ header nav ul li a {
 
 /* GOLD */
 .membership-tag.gold {
-    background-color: #d4af37; /* Dorado */
+    background-color: gold; /* Dorado */
+    color: black;
 }
 
 /* SILVER */
