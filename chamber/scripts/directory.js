@@ -57,6 +57,14 @@ listBtn.addEventListener("click", () => {
   displayMembers(members, "list");
 });
 
+gridBtn.addEventListener("click", () => {
+  container.classList.add("grid");
+  container.classList.remove("list");
+
+  const members = JSON.parse(localStorage.getItem("membersData") || "[]");
+  displayMembers(members, "grid");
+});
+
   // Fetch and store data locally to reuse when switching views
   async function init() {
     const response = await fetch("data/members.json");

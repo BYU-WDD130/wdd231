@@ -133,7 +133,28 @@ header nav ul li a {
 
 }
 
+.membership-tag {
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
 
+.membership-tag.gold {
+  background-color: #d4af37; /* dorado */
+}
+
+.membership-tag.silver {
+  background-color: #C0C0C0; /* plateado */
+  color: #000; /* contraste mejor */
+}
+
+.membership-tag.bronze {
+  background-color: #cd7f32; /* bronce */
+}
 
 
 
