@@ -353,8 +353,6 @@ header nav ul li a {
 
 
 
-
-
 .list .member-card {
     display: flex;
     align-items: center;
@@ -390,6 +388,37 @@ p.level {
 .view-toggle button.active {
     background-color: #00274D;
 }
+
+
+/*-------------WEATHER--------------*/
+.weather-container {
+   display: block;
+   flex-direction: column;
+   max-width: 250px;
+   align-items: center;
+
+}
+.card1 {
+  background-color: rgb(50, 232, 245);
+  border: 1px solid black;
+
+  padding: 1rem 1rem 1rem;
+  text-align: center;
+
+
+}
+
+.card1 #current-temp {
+    font-size: 2rem;
+    margin: .3rem 0;
+}
+
+#town {
+    font-size: 1.2rem;
+    color: #072724;
+    
+}
+
 
 /* -------------------- Footer -------------------- */
 footer {

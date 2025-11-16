@@ -1,5 +1,5 @@
 
-.cardw {
+.card1 {
   background-color: aquamarine;
   border: 1px solid black;
   border-radius: 10px;
@@ -8,7 +8,7 @@
 
 }
 
-.cardw #current-temp {
+.card1 #current-temp {
     font-size: 2rem;
     margin: .3rem 0;
 }
