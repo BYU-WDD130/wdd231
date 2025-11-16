@@ -49,11 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  listBtn.addEventListener("click", () => {
-    container.classList.add("list");
-    container.classList.remove("grid");
-    getMembers().then(() => displayMembers(JSON.parse(localStorage.getItem("membersData") || "[]"), "list"));
-  });
+listBtn.addEventListener("click", () => {
+  container.classList.add("list");
+  container.classList.remove("grid");
+
+  const members = JSON.parse(localStorage.getItem("membersData") || "[]");
+  displayMembers(members, "list");
+});
 
   // Fetch and store data locally to reuse when switching views
   async function init() {
