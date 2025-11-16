@@ -208,7 +208,7 @@ header nav ul li a {
 /* -------------------- Carousel & Sliders -------------------- */
 .carousel{
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll ;
     gap: 1rem;
     justify-content: center;
 
@@ -231,18 +231,29 @@ header nav ul li a {
 
 .membership-tag {
     font-size: 0.9rem;
-    background: #eee;
     display: inline-block;
-    padding: 4px 8px;
+    padding: 6px 10px;
     border-radius: 6px;
-    margin-bottom: 8px;
-    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
 }
 
-.membership-tag strong {
-    color: #c28b00; /* dorado */
+/* GOLD */
+.membership-tag.gold {
+    background-color: #d4af37; /* Dorado */
 }
 
+/* SILVER */
+.membership-tag.silver {
+    background-color: #C0C0C0; /* Plateado */
+    color: #000; /* Mejor contraste */
+}
+
+/* BRONZE */
+.membership-tag.bronze {
+    background-color: #cd7f32; /* Bronce */
+}
 #a {
     text-decoration: none;
 }
