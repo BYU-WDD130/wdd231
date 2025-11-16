@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  // --- BUSINESS CARDS SECTION ---
   const businessCards = document.querySelectorAll('.featured-businesses .business-card');
   
   const businessImages = [
