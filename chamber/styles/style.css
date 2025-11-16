@@ -429,6 +429,11 @@ p.level {
   
 
 }
+
+.weather-container h2 {
+    text-align: center;
+}
+
 .card1 {
 
   align-items: center;
