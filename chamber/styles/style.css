@@ -192,6 +192,12 @@ header nav ul li a {
     border-radius: var(--border-radius);
     padding: 1rem;
     text-align: center;
+
+
+}
+
+.business-card a {
+     color: inherit;
 }
 
 .membership-tag {
