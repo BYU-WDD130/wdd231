@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     members.forEach(member => {
       const card = document.createElement("div");
-      card.classList.add("member-card", view === "list" ? "list-item" : "grid-item");
+card.classList.add("member-card");
 
       if (view === "list") {
         card.innerHTML = `
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <p><strong>Phone:</strong> ${member.phone}</p>
             <p><strong>Membership:</strong> ${member.membership}</p>
             <p><strong>Description:</strong> ${member.description}</p>
+            <p class="membership-tag ${member.membership.toLowerCase()}">${member.membership} Member</p>  
             <a href="${member.website}" target="_blank">Visit Website</a>
           </div>
         `;
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <img src="${member.image}" alt="${member.name} logo" loading="lazy">
           <h3>${member.name}</h3>
           <p class="level">${member.membership} Member</p>
+         <p class="membership-tag ${member.membership.toLowerCase()}">${member.membership} Member</p>          
           <a href="${member.website}" target="_blank">Visit Website</a>
         `;
       }

@@ -133,28 +133,126 @@ header nav ul li a {
 
 }
 
-.membership-tag {
-  font-size: 0.9rem;
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #fff;
+#membersContainer.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
+
+/* CONTENEDOR GRID */
+#membersContainer.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* CONTENEDOR LIST */
+#membersContainer.list {
+  display: block;
+  padding: 1rem;
+}
+
+/* TARJETAS */
+.member-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: #fefefe;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* GRID: imagen arriba, contenido abajo */
+#membersContainer.grid .member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* LIST: imagen a la izquierda, contenido a la derecha */
+#membersContainer.list .member-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+#membersContainer.list .member-card img {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+
+#membersContainer.grid .member-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* NOMBRE DEL MIEMBRO */
+.member-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+/* NIVEL DE MEMBRESÍA */
+.membership-tag {
+  font-size: 0.85rem;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Colores */
 .membership-tag.gold {
   background-color: #d4af37; /* dorado */
+  color: #fff;
 }
 
 .membership-tag.silver {
   background-color: #C0C0C0; /* plateado */
-  color: #000; /* contraste mejor */
+  color: #000;
 }
 
 .membership-tag.bronze {
   background-color: #cd7f32; /* bronce */
+  color: #fff;
 }
+
+/* INFO ADICIONAL */
+.member-info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.member-info a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #00274D;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.member-info a:hover {
+  text-decoration: underline;
+}
+
+
+
 
 
 
