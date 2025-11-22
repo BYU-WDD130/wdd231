@@ -22,3 +22,15 @@
                 e.target.style.display = 'none';
             }
         });
+
+const navbutton = document.querySelector('#ham-btn');
+const navBar = document.querySelector('#nav-bar');
+
+navbutton.addEventListener('click', () => {
+  navbutton.classList.toggle('show');
+  navBar.classList.toggle('show');  
+});
+
+// ---- FOOTER DATES ----
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
