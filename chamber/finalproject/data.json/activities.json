@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Snorkeling Tour",
+    "description": "Explore coral reefs and tropical fish in the crystal-clear waters.",
+    "image": "images/snorkeling.webp",
+    "duration": "3 hours"
+  },
+  {
+    "name": "Eco-Tour",
+    "description": "Guided tour through the islands to observe wildlife and natural habitats.",
+    "image": "images/eco-tour.jpg",
+    "duration": "4 hours"
+  },
+  {
+    "name": "Sport Fishing",
+    "description": "Experience deep-sea fishing with expert guides.",
+    "image": "images/fishing.jpg",
+    "duration": "5 hours"
+  },
+  {
+    "name": "Forest tour",
+    "description": "",
+    "image": "images/pingboa.jpg",
+    "duration": "2 hours"
+  },
+
+  {
+    "name": "Locals visit",
+    "description": "Here you can Know the locals at first hand.",
+    "image": "images/Locals.jpg",
+    "duration": "2 hours"
+  },
+  {
+    "name": "Turtle island",
+    "description": "First side of the main island.",
+    "image": "images/tortuga-island.jpg",
+    "duration": "2 hours"
+  }
+
+
+]
