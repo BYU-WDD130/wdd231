@@ -17,8 +17,7 @@ menuBtn.addEventListener('click', () => {
             alt: 'Snorkeling in Cayos Cochinos'
         },
 
-
-                {
+       {
             src: 'images/food.webp',
             alt: 'Snorkeling in Cayos Cochinos'
         }
