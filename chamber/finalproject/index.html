@@ -17,17 +17,22 @@
     <title>Tourism in Cayos Cochinos – Honduras</title>
 
     <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/large.css">
     <script type="module" src="scripts/index.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <nav class="navbar">
-   
+ 
+      <div class="logo">
         <img src="images/logo.png" alt="Cayos Cochinos" width="55" height="55" loading="lazy">
+  
+    <h1 class="logo">Cayos Tours</h1>  
+    </div>
+     <nav class="navbar">
+      
     
-        <h1 class="logo">Cayos Cochinos</h1>
 
         <button id="menu-btn" class="menu-btn" aria-label="Menu" aria-expanded="false">
             ☰
@@ -46,8 +51,9 @@
 <main>
 
     <!-- Hero section -->
+     <link rel="preload" as="image" href="images/skyline-hero.webp" fetchpriority="high">
     <section class="hero">
-        <img src="images/Cayos-hero.webp" alt="Scenic aerial view of Cayos Cochinos" class="hero-img">
+        <img src="images/Cayos-hero.webp" alt="Scenic aerial view of Cayos Cochinos" class="hero-img" fetchpriority="high" width="1200" height="675">
 
     </section>
 
@@ -72,7 +78,7 @@
             </a>
 
             <a href="info.html" class="card">
-                <img src="images/services.jpg" alt="Visitor exploring travel information" loading="lazy">
+                <img src="images/services.jpg" alt="Visitor exploring travel information" width="" height=""   loading="lazy">
                 <h3>Travel Information</h3>
                 <p>How to get there, accommodations, and essential tips.</p>
             </a>
