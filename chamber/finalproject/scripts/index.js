@@ -9,17 +9,17 @@ menuBtn.addEventListener('click', () => {
 
     const images = [
         {
-            src: 'images/coral.jpg',
+            src: 'images/corales.webp',
             alt: 'Snorkeling in Cayos Cochinos'
         },
         {
-            src: 'images/servicios.jpg',
+            src: 'images/servicios.webp',
             alt: 'Snorkeling in Cayos Cochinos'
         },
 
 
                 {
-            src: 'images/food.jpg',
+            src: 'images/food.webp',
             alt: 'Snorkeling in Cayos Cochinos'
         }
 
