@@ -85,7 +85,10 @@ header .logo h1 {
 .intro {
     text-align: center;
     padding: 2rem;
-    border:1px solid #51d387;
+    border-bottom:1px solid black;
+    max-width: 100%;
+    max-height: 100%;
+
 }
 
 h2, h3 {
@@ -152,8 +155,21 @@ h2, h3 {
 .featured-text p {
     font-size: 1rem;
     line-height: 1.5;
+    text-align: center;
+    padding: 2rem;
+    border:1px solid black;
+    max-width: 100%;
+    max-height: 100%;
+
 }
 
+.facts {
+    text-align: center;
+    padding: 2rem;
+    border:1px solid black;
+    max-width: 100%;
+    max-height: 100%;
+}
 
 .facts ul {
     padding-left: 1.2rem;
