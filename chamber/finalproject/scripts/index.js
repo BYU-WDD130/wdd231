@@ -13,16 +13,13 @@ menuBtn.addEventListener('click', () => {
             alt: 'Snorkeling in Cayos Cochinos'
         },
         {
-            src: 'images/coral.jpg',
+            src: 'images/servicios.jpg',
             alt: 'Snorkeling in Cayos Cochinos'
         },
 
+
                 {
-            src: 'images/coral.jpg',
-            alt: 'Snorkeling in Cayos Cochinos'
-        },
-                {
-            src: 'images/coral.jpg',
+            src: 'images/food.jpg',
             alt: 'Snorkeling in Cayos Cochinos'
         }
 
