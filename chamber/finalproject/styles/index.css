@@ -33,7 +33,10 @@ header .logo img {
 header .logo h1 {
     color: white;
     font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
+
 
 /* NAVIGATION */
 .navbar {
@@ -82,10 +85,13 @@ header .logo h1 {
 .intro {
     text-align: center;
     padding: 2rem;
+    border:1px solid #51d387;
 }
 
 h2, h3 {
     font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 2rem;
 }
 
 
