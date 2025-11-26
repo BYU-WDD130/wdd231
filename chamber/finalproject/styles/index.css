@@ -125,7 +125,7 @@ h2, h3 {
 }
 
 .featured-images img:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
     box-shadow: 0 4px 20px
 
 }
@@ -151,6 +151,32 @@ h2, h3 {
 
 .facts ul {
     padding-left: 1.2rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    
+}
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social-media img {
+    width: 22px;
+    height: 22px;
+
+}
+
+.social-media a:hover {
+    background-color: #ddd;
 }
 
 
