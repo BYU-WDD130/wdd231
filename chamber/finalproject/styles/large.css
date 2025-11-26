@@ -1,5 +1,5 @@
 
-@media (min-width: 768px) {
+@media (min-width: 38rem) {
     .menu-btn {
         display: none;
     }
@@ -42,7 +42,7 @@ section {
 .cards {
     display: grid;
     gap: 2rem;
-    width: 40%;
+    width: 80%;
 
 }
 
