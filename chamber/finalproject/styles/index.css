@@ -37,7 +37,7 @@ header .logo{
 
 h1 {
     color: #ffffff;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .logo img {
@@ -69,6 +69,19 @@ h1 {
     cursor: pointer;
 }
 
+.intro{
+   text-align: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: "Montserrat", sans-serif;
+}
 .hero {
     padding: 0;
 }
@@ -90,7 +103,57 @@ h1 {
 
 }
 
+footer {
+    background-color: #00274D;
+    color: #ffffff;
+    padding: 2rem;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-container h3 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0.5rem;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #00274D;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+button:hover {
+   cursor: pointer;
+
+}
+
+
+.sitemap {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+#LastModified {
+    text-align: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
 
 
 

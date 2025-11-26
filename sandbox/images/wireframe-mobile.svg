@@ -1,0 +1,32 @@
+<svg width="300" height="600" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Header -->
+  <rect x="0" y="0" width="300" height="60" fill="#d0e8ff" stroke="#000"/>
+  <text x="20" y="35" font-size="16">Logo / Menu</text>
+
+  <!-- Hero -->
+  <rect x="0" y="70" width="300" height="150" fill="#e6f3ff" stroke="#000"/>
+  <text x="90" y="145" font-size="16">Hero Image</text>
+
+  <!-- Section Title -->
+  <text x="20" y="255" font-size="16">Tours Section</text>
+
+  <!-- Card 1 -->
+  <rect x="20" y="270" width="260" height="80" fill="#ffffff" stroke="#000"/>
+  <text x="35" y="315" font-size="14">Tour Card 1</text>
+
+  <!-- Card 2 -->
+  <rect x="20" y="360" width="260" height="80" fill="#ffffff" stroke="#000"/>
+  <text x="35" y="405" font-size="14">Tour Card 2</text>
+
+  <!-- Card 3 -->
+  <rect x="20" y="450" width="260" height="80" fill="#ffffff" stroke="#000"/>
+  <text x="35" y="495" font-size="14">Tour Card 3</text>
+
+  <!-- Footer -->
+  <rect x="0" y="540" width="300" height="60" fill="#d0e8ff" stroke="#000"/>
+  <text x="100" y="575" font-size="14">Footer</text>
+
+</svg>
+
+

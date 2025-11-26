@@ -1,0 +1,60 @@
+:root {
+        --primary: #0077b6;
+        --accent: #ff9a1f;
+        --text: #333;
+        --background: #f4f8fb;
+    }
+
+    body {
+        margin: 0;
+        padding: 2rem;
+        font-family: "Poppins", sans-serif;
+        background: var(--background);
+        color: var(--text);
+        line-height: 1.6;
+    }
+
+    h1, h2 {
+        font-family: "Lora", serif;
+        color: var(--primary);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    section {
+        background: white;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .color-box-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.color-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.color-box.primary {
+    background: #0077b6;
+}
+
+.color-box.accent {
+    background: #ffdd57;
+}
+
+    .wireframes img {
+        max-width: 100%;
+        border: 2px solid var(--primary);
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
