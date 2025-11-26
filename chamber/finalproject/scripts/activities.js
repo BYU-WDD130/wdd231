@@ -25,5 +25,5 @@ export function renderActivities(activities) {
     </div>
   `).join('');
 
-  // Add event listeners for modals here
+
 }

@@ -4,13 +4,34 @@
     box-sizing: border-box;
 }
 
-
-
-
 body {
     font-family: Arial, sans-serif;
     background-color: #fafafa;
     line-height: 1.6;
+}
+
+/* HEADER & NAV */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0077b6;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0.5rem 1rem;
+}
+
+header .logo img {
+    border-radius: 50px;
+}
+
+header .logo h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* NAVIGATION */
@@ -19,39 +40,15 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #0077b6;
-    color: white;
     padding: 1rem;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header .logo{
-    align-items: center;
-    background-color: #0077b6;    
-    text-align: center;
-}
-
-h1 {
-    color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-}
-
-.logo img {
-   border-radius: 50px;    
-
-}
-
-
 .nav-links {
     list-style: none;
-    display: none; /* mobile first */
+    display: none;  
     flex-direction: column;
     background: #0077b6;
-    width: 100%;             /* evita colapso de fondo */
+    width: 100%;
 }
 
 .nav-links li a {
@@ -69,43 +66,87 @@ h1 {
     cursor: pointer;
 }
 
-.intro{
-   text-align: center;
+
+.hero {
+    position: relative;
+    padding: 0;
 }
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.hero-img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.intro {
     text-align: center;
+    padding: 2rem;
 }
 
 h2, h3 {
     font-family: "Montserrat", sans-serif;
 }
-.hero {
-    padding: 0;
+
+
+/* Sección Featured */
+.featured {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Título de la sección */
+.featured h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
 
-.hero-img {
+/* Contenedor de imágenes */
+.featured-images {
+    display: flex;
+    flex-direction: row; /* Siempre en fila */
+
+    justify-content: center;
+    flex-wrap: wrap; /* esto me permite que las imágenes bajen de fila si no caben */
+    margin-bottom: 2rem;
+}
+
+.featured-images img {
     width: 100%;
-    height: 60vh;          
+    max-width: 300px; 
+    height: auto;
+
     object-fit: cover;
 }
 
-
-
-.featured {
+/* Contenedor de texto */
+.featured-text {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
 }
+
+.featured-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.featured-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+.facts ul {
+    padding-left: 1.2rem;
+}
+
 
 footer {
     background-color: #00274D;
-    color: #ffffff;
+    color: white;
     padding: 2rem;
 }
 
@@ -133,28 +174,16 @@ footer button {
     background-color: #00274D;
     border: none;
     border-radius: 5px;
-    color: #ffffff;
+    color: white;
 }
 
 button:hover {
-   cursor: pointer;
-
+    cursor: pointer;
 }
 
-
-.sitemap {
+.sitemap, #LastModified {
     text-align: center;
     margin-top: 1rem;
     font-size: 0.9rem;
 }
-
-#LastModified {
-    text-align: center;
-    align-items: center;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-}
-
-
-
-
+/* Luego hago el root*/
