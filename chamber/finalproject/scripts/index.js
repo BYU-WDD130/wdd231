@@ -1,9 +1,9 @@
-const menuBtn = document.querySelector('#menu-btn');
-const navLinks = document.querySelector('#nav-links');
+const navbutton = document.querySelector('#ham-btn');
+const navBar = document.querySelector('#nav-bar');
 
-menuBtn.addEventListener('click', () => {
-    navLinks.style.display =
-        navLinks.style.display === 'flex' ? 'none' : 'flex';
+navbutton.addEventListener('click', () => {
+  navbutton.classList.toggle('show');
+  navBar.classList.toggle('show');  
 });
 
 

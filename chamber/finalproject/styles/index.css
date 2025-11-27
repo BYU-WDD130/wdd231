@@ -23,6 +23,10 @@ header .logo {
     align-items: center;
     gap: .5rem;
     padding: 0.5rem 1rem; 
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight:lighter
 }
 
 header .logo img {
@@ -37,11 +41,60 @@ header .logo h1 {
     margin-bottom: 1.5rem;
 }
 
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger::before {
+    content: "\2630"; /* ☰ */
+    color: #ffffff;
+}
+
+.hamburger.show::before {
+    content: "\2715"; /* ✕ */
+}
+
+/* Navigation */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0077b6; 
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+
 
 /* NAVIGATION */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     background: #0077b6;
     padding: 1rem;
@@ -53,6 +106,7 @@ header .logo h1 {
     flex-direction: column;
     background: #0077b6;
     width: 100%;
+
 }
 
 .nav-links li a {
@@ -85,10 +139,7 @@ header .logo h1 {
 .intro {
     text-align: center;
     padding: 2rem;
-    border-bottom:1px solid black;
-    max-width: 100%;
-    max-height: 100%;
-
+    border:1px solid #51d387;
 }
 
 h2, h3 {
@@ -115,7 +166,7 @@ h2, h3 {
 /* Contenedor de imágenes */
 .featured-images {
     display: flex;
-    flex-direction: row; /* Siempre en fila */
+    flex-direction: row;
 
     justify-content: center;
     flex-wrap: wrap; /* esto me permite que las imágenes bajen de fila si no caben */
@@ -155,21 +206,8 @@ h2, h3 {
 .featured-text p {
     font-size: 1rem;
     line-height: 1.5;
-    text-align: center;
-    padding: 2rem;
-    border:1px solid black;
-    max-width: 100%;
-    max-height: 100%;
-
 }
 
-.facts {
-    text-align: center;
-    padding: 2rem;
-    border:1px solid black;
-    max-width: 100%;
-    max-height: 100%;
-}
 
 .facts ul {
     padding-left: 1.2rem;

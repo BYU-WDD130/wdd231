@@ -10,7 +10,30 @@
         gap: 1rem;
         width: auto;
     }
+
+.hamburger {
+  display: none;
+
+
 }
+
+.navigation {
+  display: block;
+  }
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #0077b6;      
+    gap: 1rem
+
+
+}
+
+
 
 
 .hero {
@@ -68,4 +91,5 @@ footer {
 footer a {
     color: #ffdd57;
     text-decoration: none;
+}
 }
