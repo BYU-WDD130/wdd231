@@ -26,7 +26,7 @@ header .logo {
     color: #ffffff;
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
-    font-weight:lighter
+    font-weight:bold;
 }
 
 header .logo img {
