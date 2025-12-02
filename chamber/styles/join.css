@@ -226,6 +226,10 @@ main {
     padding: 0.6rem 1rem;
 }
 
+main h1 {
+    text-align: center;
+}
+
 .hidden {
     display: none;
 }
@@ -385,9 +389,14 @@ footer button {
   margin-top: 2rem;
 }
 
+.membership-cards h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
 .cards-container {
-  display: flex;
-  flex-direction: column;
+ display: flex;
+ flex-direction: column;
   gap: 1rem;
 }
 
@@ -465,12 +474,63 @@ footer button {
 /* Responsive layout */
 @media (min-width: 768px) {
   .cards-container {
-    flex-direction: row;
-    flex-wrap: wrap;
+
     gap: 1rem;
   }
 
   .card {
     flex: 1 1 calc(50% - 1rem); /* Two per row on larger screens */
   }
+}
+
+
+@media only screen and (min-width: 38rem) {
+
+
+
+
+.hamburger {
+  display: none;
+
+
+}
+
+.navigation {
+
+  display: block;
+  background-color: #00274D;
+  }
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #00274D;
+    gap: 1rem;
+}
+
+
+.membership-title {
+    text-align: center;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: black;
+    padding: 0;
+    margin: auto;
+   
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 20px;
+}
+  .navigation.show ul {
+    display: flex;
+  }
+
 }
