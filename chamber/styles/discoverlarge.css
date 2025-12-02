@@ -1,0 +1,35 @@
+@media (min-width: 1025px) {
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+.hamburger {
+  display: none;
+
+
+}
+
+.navigation {
+  display: block;
+
+  }
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #00274D;      
+    gap: 1rem
+
+}
+
+
+.navigation.show ul {
+   display: flex;
+  }
+
+
+
+}

@@ -23,9 +23,12 @@
     background-color: #00274D;      
     gap: 1rem
 
-
 }
 
+
+.navigation.show ul {
+   display: flex;
+  }
 
 .carousel{
     display: flex;
@@ -33,8 +36,6 @@
     overflow-x: auto;
     gap: 1rem;
     justify-content: center;
-
-
 
 }
 
@@ -84,9 +85,7 @@
 
 
 
-  .navigation.show ul {
-    display: flex;
-  }
+
 
 }
 
