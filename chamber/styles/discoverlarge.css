@@ -1,7 +1,11 @@
 @media (min-width: 1025px) {
-    .cards-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
+
+    
+
+
+.cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
 
 .hamburger {
   display: none;

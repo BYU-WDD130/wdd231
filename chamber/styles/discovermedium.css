@@ -1,14 +1,22 @@
 @media (min-width: 641px) {
-    .cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .card img {
-        transition: transform .3s ease, filter .3s ease;
-    }
+.discover-grid {
+    grid-template-areas:
+        "message"
+        "cards";
+    grid-template-columns: 1fr;
+}
 
-    .card img:hover {
-        transform: scale(1.06);
-        filter: brightness(1.15);
-    }
+.cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card img {
+    transition: transform .3s ease, filter .3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.06);
+    filter: brightness(1.15);
+   }
 }

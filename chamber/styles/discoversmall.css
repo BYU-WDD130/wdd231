@@ -1,3 +1,6 @@
+/* ===============================
+   ROOT VARIABLES
+================================ */
 :root {
     --primary-color: #00274D;
     --accent-color: #bd5405;
@@ -6,18 +9,23 @@
     --text-color: #333333;
     --white: #ffffff;
     --border-radius: 8px;
+
     --font-serif: 'Merriweather', serif;
     --font-sans: 'Open Sans', sans-serif;
     --font-alt: 'Roboto Slab', serif;
+
     --gold: #FFD700;
     --silver: #C0C0C0;
     --bronze: #cd7f32;
+
     --weather: #072724;
 }
 
+/* ===============================
+   GLOBAL STYLES
+================================ */
 body {
     font-family: var(--font-sans);
-
     background-color: var(--bg-color);
     line-height: 1.6;
 }
@@ -26,6 +34,9 @@ h1, h2, h3 {
     font-family: var(--font-serif);
 }
 
+/* ===============================
+   DISCOVER PAGE GRID
+================================ */
 .discover-grid {
     display: grid;
     grid-template-areas:
@@ -45,8 +56,6 @@ h1, h2, h3 {
     font-family: 'Merriweather', serif;
     text-align: center;
 }
-
-
 
 .cards-grid {
     grid-area: cards;
@@ -69,6 +78,9 @@ h1, h2, h3 {
     transition: none; /* hover disabled for mobile */
 }
 
+/* ===============================
+   HEADER
+================================ */
 header {
     position: sticky;
     top: 0;
@@ -91,7 +103,9 @@ header .logo img {
     border-radius: 50px;
 }
 
-/* Hamburger Menu */
+/* ===============================
+   HAMBURGER MENU
+================================ */
 .hamburger {
     background: none;
     border: none;
@@ -111,7 +125,9 @@ header .logo img {
     content: "\2715"; /* ✕ */
 }
 
-/* Navigation */
+/* ===============================
+   NAVIGATION
+================================ */
 .navigation {
     display: none;
 }
@@ -134,21 +150,22 @@ header .logo img {
     text-decoration: none;
 }
 
-/* Header Nav Flex */
 header nav ul {
     display: flex;
     gap: 1rem;
 }
 
-.front {
-    text-align: center;}
-
-
 header nav ul li a {
     font-weight: 600;
 }
 
-/* -------------------- Hero -------------------- */
+.front {
+    text-align: center;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
 .hero {
     position: relative;
 }
@@ -212,13 +229,14 @@ header nav ul li a {
     transform: translateY(-2px);
 }
 
+/* ===============================
+   FOOTER
+================================ */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 2rem;
 }
-
-
 
 .footer-container {
     display: flex;
@@ -242,7 +260,8 @@ footer button {
     color: var(--white);
 }
 
-.sitemap, #LastModified {
+.sitemap,
+#LastModified {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0.5rem;
