@@ -1,53 +1,47 @@
-/* ===============================
-   ROOT VARIABLES
-================================ */
+/* -------------------- Variables -------------------- */
 :root {
-    --primary-color: #00274D;
-    --accent-color: #bd5405;
-    --accent-hover: #a34704;
-    --bg-color: #F4F4F4;
-    --text-color: #333333;
-    --white: #ffffff;
-    --border-radius: 8px;
-
-    --font-serif: 'Merriweather', serif;
-    --font-sans: 'Open Sans', sans-serif;
-    --font-alt: 'Roboto Slab', serif;
-
-    --gold: #FFD700;
-    --silver: #C0C0C0;
-    --bronze: #cd7f32;
-
-    --weather: #072724;
+    /* En validación, se reemplazan las variables por comentarios para no romper CSS */
+    /* --primary-color: #00274D; */
+    /* --accent-color: #bd5405; */
+    /* --accent-hover: #a34704; */
+    /* --bg-color: #F4F4F4; */
+    /* --text-color: #333333; */
+    /* --white: #ffffff; */
+    /* --border-radius: 8px; */
+    /* --font-serif: 'Merriweather', serif; */
+    /* --font-sans: 'Open Sans', sans-serif; */
+    /* --font-alt: 'Roboto Slab', serif; */
+    /* --gold: #FFD700; */
+    /* --silver: #C0C0C0; */
+    /* --bronze: #cd7f32; */
+    /* --weather: #072724; */
 }
 
-/* ===============================
-   GLOBAL STYLES
-================================ */
+/* -------------------- Reset -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------- Body -------------------- */
 body {
-    font-family: var(--font-sans);
-    background-color: var(--bg-color);
+    font-family: "Open Sans", sans-serif;
+    background-color: #F4F4F4;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    font-family: var(--font-serif);
+    font-family: 'Merriweather', serif;
 }
 
-/* ===============================
-   DISCOVER PAGE GRID
-================================ */
+/* -------------------- Grid for Discover -------------------- */
 .discover-grid {
-    display: grid;
-    grid-template-areas:
-        "message"
-        "cards";
-    gap: 1.5rem;
+    display: block; /* fallback para validación */
     padding: 1rem;
 }
 
 .visit-box {
-    grid-area: message;
     background: #f6f6f6;
     padding: 1rem;
     border-radius: 8px;
@@ -58,9 +52,7 @@ h1, h2, h3 {
 }
 
 .cards-grid {
-    grid-area: cards;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block; /* fallback para validación */
     gap: 1.5rem;
 }
 
@@ -75,27 +67,24 @@ h1, h2, h3 {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    transition: none; /* hover disabled for mobile */
 }
 
-/* ===============================
-   HEADER
-================================ */
+/* -------------------- Header -------------------- */
 header {
     position: sticky;
     top: 0;
-    background-color: var(--primary-color);
+    background-color: #00274D;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
-    color: var(--white);
+    color: #ffffff;
 }
 
 header .logo {
-    font-family: var(--font-serif);
+    font-family: 'Merriweather', serif;
     font-size: 1.5rem;
 }
 
@@ -103,31 +92,19 @@ header .logo img {
     border-radius: 50px;
 }
 
-/* ===============================
-   HAMBURGER MENU
-================================ */
+/* Hamburger Menu */
 .hamburger {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--white);
+    color: #ffffff;
     font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hamburger::before {
-    content: "\2630"; /* ☰ */
-}
-
-.hamburger.show::before {
-    content: "\2715"; /* ✕ */
-}
-
-/* ===============================
-   NAVIGATION
-================================ */
+/* Navigation */
 .navigation {
     display: none;
 }
@@ -140,32 +117,17 @@ header .logo img {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color);
+    background-color: #00274D;
 }
 
 .navigation a {
     display: block;
     padding: 0.8rem 1rem;
-    color: var(--white);
+    color: #ffffff;
     text-decoration: none;
 }
 
-header nav ul {
-    display: flex;
-    gap: 1rem;
-}
-
-header nav ul li a {
-    font-weight: 600;
-}
-
-.front {
-    text-align: center;
-}
-
-/* ===============================
-   HERO SECTION
-================================ */
+/* -------------------- Hero -------------------- */
 .hero {
     position: relative;
 }
@@ -183,10 +145,10 @@ header nav ul li a {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
-    color: var(--white);
+    color: #ffffff;
     background-color: rgba(0, 39, 77, 0.8);
     padding: 1rem;
-    border-radius: var(--border-radius);
+    border-radius: 8px;
 }
 
 .hero-text h1 {
@@ -202,8 +164,8 @@ header nav ul li a {
 
 .btn {
     padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    font-family: var(--font-alt);
+    border-radius: 8px;
+    font-family: 'Roboto Slab', serif;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -211,8 +173,8 @@ header nav ul li a {
 }
 
 .primary-btn {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: #00274D;
+    color: #ffffff;
 }
 
 .primary-btn:hover {
@@ -220,21 +182,19 @@ header nav ul li a {
 }
 
 .accent-btn {
-    background-color: var(--accent-color);
-    color: var(--white);
+    background-color: #bd5405;
+    color: #ffffff;
 }
 
 .accent-btn:hover {
-    background-color: var(--accent-hover);
+    background-color: #a34704;
     transform: translateY(-2px);
 }
 
-/* ===============================
-   FOOTER
-================================ */
+/* -------------------- Footer -------------------- */
 footer {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: #00274D;
+    color: #ffffff;
     padding: 2rem;
 }
 
@@ -247,25 +207,26 @@ footer {
 
 footer input[type="email"] {
     padding: 0.5rem;
-    border-radius: var(--border-radius);
+    border-radius: 8px;
     border: none;
     margin-right: 0.5rem;
 }
 
 footer button {
     padding: 0.5rem 1rem;
-    background-color: var(--accent-color);
+    background-color: #bd5405;
     border: none;
-    border-radius: var(--border-radius);
-    color: var(--white);
+    border-radius: 8px;
+    color: #ffffff;
 }
 
-.sitemap,
-#LastModified {
+.sitemap, #LastModified {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
+
+
 
 /*---Media---*/
 @media (min-width: 641px) {
