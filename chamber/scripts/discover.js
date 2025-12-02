@@ -26,7 +26,7 @@ const lastVisit = localStorage.getItem("lastVisit");
 const now = Date.now();
 
 if (!lastVisit) {
-    msgBox.textContent = "Welcome! Let us know if you have any questions.";
+    msgBox.textContent = "Places in Newark, that you need to visit.";
 } else {
     const dayMs = 1000 * 60 * 60 * 24;
     const daysPassed = Math.floor((now - lastVisit) / dayMs);
