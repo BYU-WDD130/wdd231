@@ -1,4 +1,4 @@
-import { places } from "../data/places.mjs";
+const { places } = await import("../data/places.mjs");
 
 // ----- Build Cards -----
 const cardsContainer = document.querySelector("#cards");
@@ -10,11 +10,16 @@ places.forEach(place => {
     card.innerHTML = `
         <h2>${place.name}</h2>
         <figure>
-            <img src="${place.image}" alt="${place.name}">
+            <img 
+                src="${place.image}" 
+                alt="${place.name}"
+                loading="lazy"
+                decoding="async"
+            >
         </figure>
         <address>${place.address}</address>
         <p>${place.description}</p>
-        <button>Learn More</button>
+        <button aria-label="Learn more about ${place.name}">Learn More</button>
     `;
 
     cardsContainer.appendChild(card);
@@ -52,4 +57,6 @@ navbutton.addEventListener('click', () => {
 // ---- FOOTER DATES ----
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("LastModified").textContent = "Last Modified: " + document.lastModified;
+
+// Save last visit
 localStorage.setItem("lastVisit", now);

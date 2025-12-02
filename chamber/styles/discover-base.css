@@ -266,3 +266,69 @@ footer button {
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
+
+/*---Media---*/
+@media (min-width: 641px) {
+
+.discover-grid {
+    grid-template-areas:
+        "message"
+        "cards";
+    grid-template-columns: 1fr;
+}
+
+.cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card img {
+    transition: transform .3s ease, filter .3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.06);
+    filter: brightness(1.15);
+   }
+}
+
+/*-------LARGE-------*/
+
+@media (min-width: 1025px) {
+
+    
+
+
+.cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.hamburger {
+  display: none;
+
+
+}
+
+.navigation {
+  display: block;
+
+  }
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #00274D;      
+    gap: 1rem
+
+}
+
+
+.navigation.show ul {
+   display: flex;
+  }
+
+
+
+}
