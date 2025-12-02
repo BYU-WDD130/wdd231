@@ -247,7 +247,7 @@ footer button {
 }
 
 .card img:hover {
-    transform: scale(1.06);
+    transform: scale(1.01);
     filter: brightness(1.15);
    }
 }
@@ -293,3 +293,263 @@ footer button {
 
 
 }
+
+
+
+
+
+/*-----
+
+
+:root {
+    --primary-color: #00274D;
+    --accent-color: #bd5405;
+    --accent-hover: #a34704;
+    --bg-color: #F4F4F4;
+    --text-color: #333333;
+    --white: #ffffff;
+    --border-radius: 8px;
+
+    --font-serif: 'Merriweather', serif;
+    --font-sans: 'Open Sans', sans-serif;
+    --font-alt: 'Roboto Slab', serif;
+
+    --gold: #FFD700;
+    --silver: #C0C0C0;
+    --bronze: #cd7f32;
+
+    --weather: #072724;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-serif);
+}
+
+
+.discover-grid {
+    display: grid;
+    grid-template-areas:
+        "message"
+        "cards";
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.visit-box {
+    grid-area: message;
+    background: #f6f6f6;
+    padding: 1rem;
+    border-radius: 8px;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.cards-grid {
+    grid-area: cards;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: none; /* hover disabled for mobile 
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    color: var(--white);
+}
+
+header .logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+}
+
+header .logo img {
+    border-radius: 50px;
+}
+
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger::before {
+    content: "\2630"; 
+}
+
+.hamburger.show::before {
+    content: "\2715"; 
+}
+
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    font-weight: 600;
+}
+
+.front {
+    text-align: center;
+}
+
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: var(--white);
+    background-color: rgba(0, 39, 77, 0.8);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    font-family: var(--font-alt);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+}
+
+.accent-btn {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.accent-btn:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    border: none;
+    margin-right: 0.5rem;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--white);
+}
+
+.sitemap,
+#LastModified {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+----*/
