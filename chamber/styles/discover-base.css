@@ -104,6 +104,15 @@ header .logo img {
     justify-content: center;
 }
 
+.hamburger::before {
+    content: "\2630"; 
+}
+
+.hamburger.show::before {
+    content: "\2715"; 
+}
+
+
 /* Navigation */
 .navigation {
     display: none;
