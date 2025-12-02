@@ -27,7 +27,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/join-large.css">    
-    <script src="scripts/members.js" defer></script>
+
     <script src="scripts/join.js" defer></script>
 
 
@@ -130,11 +130,89 @@
     <p id="feedback" class="success hidden">Your order has been submitted!</p>
   </form>
 
- <section id="cards" class="grid">
-     <h2 class="membership-title">Our Members</h2>
- </section>  
-        <!-- Members will load here dynamically -->
-     
+ 
+    <section class="membership-cards">
+  <h2>Membership Levels</h2>
+  <div class="cards-container">
+
+    <!-- Gold Card -->
+    <div class="card">
+      <h3>Gold</h3>
+      <p>Top-tier membership for maximum exposure.</p>
+      <a href="#" class="open-modal" data-modal="modal-gold">Learn More</a>
+    </div>
+
+    <!-- Silver Card -->
+    <div class="card">
+      <h3>Silver</h3>
+      <p>Great benefits for growing businesses.</p>
+      <a href="#" class="open-modal" data-modal="modal-silver">Learn More</a>
+    </div>
+
+    <!-- Bronze Card -->
+    <div class="card">
+      <h3>Bronze</h3>
+      <p>Essential membership for small businesses.</p>
+      <a href="#" class="open-modal" data-modal="modal-bronze">Learn More</a>
+    </div>
+
+    <!-- Non-Profit Card -->
+    <div class="card">
+      <h3>Non-Profit</h3>
+      <p>Special membership for non-profit organizations.</p>
+      <a href="#" class="open-modal" data-modal="modal-nonprofit">Learn More</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modals -->
+<div id="modal-gold" class="modal hidden">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Gold Membership Benefits</h2>
+    <ul>
+      <li>Priority listing in our directory</li>
+      <li>Feature in newsletters</li>
+      <li>Access to exclusive networking events</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-silver" class="modal hidden">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Silver Membership Benefits</h2>
+    <ul>
+      <li>Directory listing</li>
+      <li>Event invitations</li>
+      <li>Social media promotion</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-bronze" class="modal hidden">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Bronze Membership Benefits</h2>
+    <ul>
+      <li>Basic directory listing</li>
+      <li>Email updates</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-nonprofit" class="modal hidden">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Non-Profit Membership Benefits</h2>
+    <ul>
+      <li>Directory listing</li>
+      <li>Special event access</li>
+      <li>Community support recognition</li>
+    </ul>
+  </div>
+</div>
 
   </main>
     
