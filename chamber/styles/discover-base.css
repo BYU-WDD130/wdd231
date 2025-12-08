@@ -1,5 +1,5 @@
 /* -------------------- Variables -------------------- */
-:root {
+/*:root {
     /* En validación, se reemplazan las variables por comentarios para no romper CSS */
     /* --primary-color: #00274D; */
     /* --accent-color: #bd5405; */
@@ -14,8 +14,8 @@
     /* --gold: #FFD700; */
     /* --silver: #C0C0C0; */
     /* --bronze: #cd7f32; */
-    /* --weather: #072724; */
-}
+    /* --weather: #072724; 
+}*/
 
 /* -------------------- Reset -------------------- */
 * {
