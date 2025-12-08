@@ -29,6 +29,7 @@ body {
     font-family: "Open Sans", sans-serif;
     background-color: #F4F4F4;
     line-height: 1.6;
+     overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -37,6 +38,7 @@ h1, h2, h3 {
 
 /* -------------------- Grid for Discover -------------------- */
 .discover-grid {
+    max-width: 1200px;
     display: block; /* fallback para validación */
     padding: 1rem;
 }
@@ -241,6 +243,8 @@ footer button {
 @media (min-width: 641px) {
 
 .discover-grid {
+    max-width: 1200px;
+    margin: auto;
     grid-template-areas:
         "message"
         "cards";
@@ -292,6 +296,12 @@ footer button {
     background-color: #00274D;      
     gap: 1rem
 
+}
+
+nav a.active {
+  color: #bd5405; /* highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid #39e6a4;
 }
 
 
