@@ -265,6 +265,13 @@ footer button {
    }
 }
 
+
+nav a.active {
+  color: #bd5405; /* highlight color */
+  font-weight: bold;
+
+}
+
 /*-------LARGE-------*/
 
 @media (min-width: 1025px) {
