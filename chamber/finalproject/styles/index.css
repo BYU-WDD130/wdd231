@@ -91,7 +91,10 @@ header nav ul {
     gap: 1rem;
 }
 
-
+.text-box p
+{
+text-align: center;
+}
 
 /* NAVIGATION */
 .navbar {
@@ -214,6 +217,16 @@ h2, h3 {
 
 .facts ul {
     padding-left: 1.2rem;
+
+    list-style-type: disc;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.facts h2 {
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .social-media {
