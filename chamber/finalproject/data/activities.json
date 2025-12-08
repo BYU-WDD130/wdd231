@@ -1,0 +1,34 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "title": "Snorkeling & Diving",
+      "description": "Explore colorful coral reefs and diverse marine life in the pristine waters of Cayos Cochinos.",
+      "image": "images/diving.webp"
+    },
+    {
+      "id": 2,
+      "title": "Island Hopping",
+      "description": "Visit the most beautiful cays and hidden beaches in Cayos Cochinos.",
+      "image": "images/starfish.webp"
+    },
+    {
+      "id": 3,
+      "title": "Wildlife Tours",
+      "description": "Observe tropical birds, sea turtles, and other native species in their natural habitat.",
+      "image": "images/infoforest.webp"
+    },
+    {
+      "id": 4,
+      "title": "Cultural Experiences",
+      "description": "Meet local communities and learn about Garifuna traditions and lifestyle.",
+      "image": "images/Boylocal.webp"
+    },
+    {
+      "id": 5,
+      "title": "Custom Adventures",
+      "description": "Create your own itinerary for a truly personalized experience in Cayos Cochinos.",
+      "image": "images/joy.webp"
+    }
+  ]
+}

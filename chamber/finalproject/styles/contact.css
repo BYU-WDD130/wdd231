@@ -1,0 +1,151 @@
+/* Reset and basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header & Nav */
+header {
+  background-color: #00a896;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header nav h1 {
+  font-size: 1.8rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.section {
+  padding: 60px 10%;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #00796b;
+  text-align: center;
+}
+
+/* Activities List */
+.activities-list {
+  list-style: none;
+  margin-top: 20px;
+  display: grid;
+  gap: 15px;
+}
+
+.activities-list li {
+  background-color: #e0f7f4;
+  padding: 15px 20px;
+  border-left: 5px solid #00a896;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activities-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* Contact Info */
+.contact-info {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Contact Form */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #00a896;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #00796b;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #004d40;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section {
+    padding: 40px 5%;
+  }
+
+  .activities-list {
+    display: flex;
+    flex-direction: column;
+  }
+}

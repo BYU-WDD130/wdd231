@@ -1,29 +1,36 @@
-import { renderActivities } from './activities.js';
+document.addEventListener("DOMContentLoaded", () => {
+  const grid = document.querySelector(".activities-grid");
 
-async function loadActivities() {
-  try {
-    const response = await fetch('activities.json');
-    const activities = await response.json();
-    renderActivities(activities);
-  } catch (error) {
-    console.error('Error loading activities:', error);
-  }
-}
+  if (!grid) return console.error("No se encontró el contenedor .activities-grid");
 
-document.addEventListener('DOMContentLoaded', loadActivities);
+  fetch("data/activities.json")
+    .then(res => {
+      if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
+      return res.json();
+    })
+    .then(data => {
+      if (!data.activities || data.activities.length === 0) {
+        grid.innerHTML = "<p>No activities available at this time.</p>";
+        return;
+      }
 
+      data.activities.forEach(activity => {
+        const card = document.createElement("div");
+        card.classList.add("activity-card");
 
-export function renderActivities(activities) {
-  const container = document.querySelector('#activities-container');
-  container.innerHTML = activities.map(activity => `
-    <div class="activity-card">
-      <img src="${activity.image}" alt="${activity.name}" loading="lazy">
-      <h3>${activity.name}</h3>
-      <p>${activity.description}</p>
-      <span>Duration: ${activity.duration}</span>
-      <button class="details-btn">View Details</button>
-    </div>
-  `).join('');
+        card.innerHTML = `
+          <img src="${activity.image}" alt="${activity.title}">
+          <div class="card-content">
+            <h3>${activity.title}</h3>
+            <p>${activity.description}</p>
+          </div>
+        `;
 
-
-}
+        grid.appendChild(card);
+      });
+    })
+    .catch(err => {
+      console.error("Error loading activities:", err);
+      grid.innerHTML = "<p>Unable to load activities at this time.</p>";
+    });
+});
