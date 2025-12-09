@@ -22,12 +22,16 @@
         height: auto;
         width: auto;
         left: 0;
-        padding-top: 0;
+        padding-top: 25px;
         display: block;
         transition: none;
+
+
     }
 
     .navigation ul {
+        list-style: none;
+        text-decoration: none;
         flex-direction: row;
         justify-content: flex-end;
     }
