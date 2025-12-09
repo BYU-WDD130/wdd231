@@ -17,6 +17,12 @@
 
 }
 
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
 .navigation {
   display: block;
   }
@@ -32,9 +38,6 @@
 
 
 }
-
-
-
 
 .hero {
     position: relative;

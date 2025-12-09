@@ -12,10 +12,22 @@ body {
 
 /* HEADER & NAV */
 header {
+    display: flex;
+    flex-direction: row;
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: #0077b6;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header .logo {
@@ -89,6 +101,7 @@ header .logo h1 {
 header nav ul {
     display: flex;
     gap: 1rem;
+
 }
 
 .text-box p

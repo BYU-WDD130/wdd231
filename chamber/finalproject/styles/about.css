@@ -14,7 +14,10 @@ body {
 
 /* Header & Nav */
 header {
-  background-color: #00a896;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0077b6;
   color: #fff;
   padding: 20px 0;
 }
