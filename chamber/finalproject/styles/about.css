@@ -170,19 +170,9 @@ text-align: center;
     width: 100%;
     height: auto;
 
-
-
 }
 
 
-.hero {
-  display: column;
-  padding: 60px 10%;
-  background-color: #fff;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
 
 .hero h2 {
   margin-bottom: 20px;
@@ -191,7 +181,7 @@ text-align: center;
 
 /* Sections */
 .section {
-  display: flex;
+  display: block;
   padding: 60px 10%;
   background-color: #fff;
   margin-bottom: 20px;
@@ -200,8 +190,15 @@ text-align: center;
 }
 
 .section h2 {
+  text-align: center;
   margin-bottom: 20px;
   color: #00796b;
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+
 }
 
 .activities-list, .contact-info {
@@ -314,13 +311,7 @@ footer button {
         width: auto;
     }
 
-  .hero {
-    display: flex;
-    padding: auto;
-    gap: 2rem;
-    padding: 40px 5%;
-  }
-    
+
     .hamburger {
         display: none;
     }
@@ -346,11 +337,17 @@ footer button {
 
   
   .section {
-    display: flex;
+    display: block;
     padding: auto;
     gap: 2rem;
-    padding: 40px 5%;
+
   }
+
+  .section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00796b;
+}
   
 
 footer {
