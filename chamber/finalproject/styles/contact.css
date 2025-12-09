@@ -166,6 +166,7 @@ text-align: center;
 
 /* Sections */
 .section {
+  display: block;
   padding: 60px 10%;
   background-color: #fff;
   margin: 20px auto;
@@ -177,6 +178,16 @@ text-align: center;
   margin-bottom: 20px;
   color: #00796b;
   text-align: center;
+}
+
+
+.hotel {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 2rem;
+
 }
 
 /* Activities List */
@@ -215,6 +226,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 510px;
 }
 
 form input, form textarea {
@@ -241,6 +253,10 @@ form button:hover {
   background-color: #00796b;
   transform: scale(1.05);
 }
+
+
+
+
 
 /* Footer */
 footer {
@@ -278,7 +294,17 @@ footer {
         display: block;
         transition: none;
 
+    }
 
+.map {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+    .hotel {
+      display: flex;
+      flex-direction: row;
     }
 
     .navigation ul {
@@ -290,6 +316,7 @@ footer {
 
   .section {
     padding: 40px 5%;
+
   }
 
   .activities-list {
@@ -297,3 +324,13 @@ footer {
     flex-direction: column;
   }
 }
+
+
+@media (min-width: 68rem) {
+  .hotel {
+    gap: 2rem;
+  }
+
+
+}
+
