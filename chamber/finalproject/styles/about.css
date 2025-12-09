@@ -172,7 +172,11 @@ text-align: center;
 
 }
 
+.hero-section {
+    width: 100%;
+    height: 20%;
 
+}
 
 .hero h2 {
   margin-bottom: 20px;
@@ -195,11 +199,11 @@ text-align: center;
   color: #00796b;
 }
 
-.section img {
-    width: 100%;
-    height: auto;
-
+.section p {
+  margin-top: 10px;
+  line-height: 1.6;
 }
+
 
 .activities-list, .contact-info {
   list-style: none;
@@ -338,7 +342,7 @@ footer button {
   
   .section {
     display: block;
-    padding: auto;
+
     gap: 2rem;
 
   }
