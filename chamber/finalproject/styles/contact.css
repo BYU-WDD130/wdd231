@@ -187,7 +187,7 @@ text-align: center;
  display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+
   gap: 2rem;
 
 }
@@ -320,7 +320,8 @@ button:hover {
 .social-media {
     display: block;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 3rem;
+
 }
 
 
@@ -408,4 +409,8 @@ footer a {
     text-decoration: none;
 }
 
-
+.sitemap, #LastModified {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
