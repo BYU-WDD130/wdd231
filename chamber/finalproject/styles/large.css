@@ -11,36 +11,27 @@
         width: auto;
     }
 
-.hamburger {
-  display: none;
+  
+    
+    .hamburger {
+        display: none;
+    }
 
+    .navigation {
+        position: static;
+        height: auto;
+        width: auto;
+        left: 0;
+        padding-top: 0;
+        display: block;
+        transition: none;
+    }
 
-}
+    .navigation ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 
-  header nav {
-    flex-direction: column;
-    gap: 10px;
-
-  }
-
-
-.navigation {
-  display: block;
-
-  }
-
-.navigation ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-    background-color: #0077b6;      
-    gap: 1rem;
-    justify-content: flex-end;
-
-
-}
 
 .hero {
     position: relative;
