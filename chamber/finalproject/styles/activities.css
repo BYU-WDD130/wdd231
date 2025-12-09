@@ -225,11 +225,66 @@ form button:hover {
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #004d40;
-  color: #fff;
+    background-color: #0077b6; 
+    color: white;
+    padding: 2rem;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+
+.footer-container h3 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0.5rem;
+}
+
+footer input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+footer button {
+    padding: 0.5rem 1rem;
+    background-color: #00274D;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.sitemap, #LastModified {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.social-media {
+    display: block;
+    gap: 10px;
+    margin-top: 3rem;
+
+}
+
+
+.social-media img {
+    width: 34px;
+    height: 34px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+
+}
+.social-media img:hover {
+    background-color: #ddd;
+}
+
 
 /* Responsive */
 @media (min-width: 38rem) {
@@ -272,4 +327,24 @@ footer {
   .section {
     padding: 40px 5%;
   }
+
+footer {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+.sitemap, #LastModified {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+
+
+
 }
