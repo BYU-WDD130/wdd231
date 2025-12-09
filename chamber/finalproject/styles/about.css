@@ -167,12 +167,9 @@ text-align: center;
 
 
 .hero-img {
-    max-width: 450px;
-    max-height: 450px;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+
 
 
 }
@@ -194,6 +191,7 @@ text-align: center;
 
 /* Sections */
 .section {
+  display: flex;
   padding: 60px 10%;
   background-color: #fff;
   margin-bottom: 20px;
@@ -302,7 +300,7 @@ footer button {
 
 
 /* Responsive */
-@media (min-width: 54rem) 
+@media (min-width: 38rem) 
 
 {
     .menu-btn {
