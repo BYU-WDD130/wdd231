@@ -166,10 +166,20 @@ text-align: center;
 }
 
 
-.hero {
-  display: flex;
+.hero-img {
+    max-width: 250px;
+    max-height: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+
+
 }
+
+
 .hero {
+  display: column;
   padding: 60px 10%;
   background-color: #fff;
   margin-bottom: 20px;
@@ -307,7 +317,9 @@ footer button {
     }
 
   .hero {
-
+    display: flex;
+    padding: auto;
+    gap: 2rem;
     padding: 40px 5%;
   }
     
@@ -336,8 +348,12 @@ footer button {
 
   
   .section {
+    display: flex;
+    padding: auto;
+    gap: 2rem;
     padding: 40px 5%;
   }
+  
 
 footer {
     background: #0077b6;
