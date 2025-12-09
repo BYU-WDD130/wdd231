@@ -27,7 +27,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 0;
 }
 
 header .logo {
@@ -104,6 +104,7 @@ header .logo h1 {
 .navigation a {
     padding: 1rem;
     font-size: 1rem;
+
 }
 
 /* Cuando está visible */
