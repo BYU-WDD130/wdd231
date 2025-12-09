@@ -20,11 +20,13 @@
   header nav {
     flex-direction: column;
     gap: 10px;
+
   }
 
 
 .navigation {
   display: block;
+
   }
 
 .navigation ul {
@@ -34,7 +36,8 @@
     padding: 0;
     color: #ffffff;
     background-color: #0077b6;      
-    gap: 1rem
+    gap: 1rem;
+    justify-content: flex-end;
 
 
 }
