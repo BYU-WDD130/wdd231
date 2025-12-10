@@ -177,8 +177,12 @@ text-align: center;
 }
 
 .hero-section {
+  width: 100%;
+  max-width: 590px;
   max-height: 250px;      /* La sección nunca mide más de 250px */
-  overflow: hidden;       /* Oculta el exceso de la imagen */
+  margin: 0 auto;     /* centra el recuadro */
+  overflow: hidden;   /* recorta lo que salga */
+  position: relative;      /* Oculta el exceso de la imagen */
 }
 
 .hero-section img {
@@ -352,7 +356,7 @@ footer button {
         justify-content: flex-end;
     }
   .hero-img {
-    transform: scale(1.2); 
+    transform: scale(1); 
   }
   
   .section {
