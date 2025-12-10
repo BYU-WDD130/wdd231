@@ -1,0 +1,10 @@
+{
+  "gallery": [
+    { "image": "images/estacion-cientifica.webp", "alt": "Beautiful beach view" },
+    { "image": "images/coraless.webp", "alt": "Snorkeling in clear waters" },
+    { "image": "images/CayosCochinos.webp", "alt": "Boats near the cays" },
+    { "image": "images/Arrecifes.webp", "alt": "Coral reef close-up" },
+    { "image": "images/infoforest.webp", "alt": "Tropical forest trail" },
+    { "image": "images/Sunrise.webp", "alt": "Sunset at the shore" }
+  ]
+}

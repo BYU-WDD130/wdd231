@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector(".activities-grid");
 
-  if (!grid) return console.error("No se encontró el contenedor .activities-grid");
+  if (!grid) return console.error("The .activities-grid container was not found.");
 
   fetch("data/activities.json")
     .then(res => {
@@ -23,8 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="card-content">
             <h3>${activity.title}</h3>
             <p>${activity.description}</p>
+            <button class="details-btn">View Details</button>
           </div>
         `;
+
+        card.querySelector(".details-btn").addEventListener("click", () => {
+          showActivityDetails(activity);
+        });
 
         grid.appendChild(card);
       });
@@ -34,6 +39,36 @@ document.addEventListener("DOMContentLoaded", () => {
       grid.innerHTML = "<p>Unable to load activities at this time.</p>";
     });
 });
+
+
+// ---------------------------------
+// Modal to show activity details
+// ---------------------------------
+function showActivityDetails(activity) {
+  const modal = document.createElement("div");
+  modal.classList.add("modal-overlay");
+
+  const placesList = activity.places ? activity.places.join(", ") : "Not specified";
+
+  modal.innerHTML = `
+    <div class="modal">
+      <h2>${activity.title}</h2>
+
+      <p><strong>Price:</strong> $${activity.price} USD</p>
+      <p><strong>Places to Visit:</strong> ${placesList}</p>
+      <p><strong>Duration:</strong> ${activity.days} day(s)</p>
+
+      <button class="close-modal">Close</button>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+
+  modal.querySelector(".close-modal").addEventListener("click", () => {
+    modal.remove();
+  });
+}
+
 
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 

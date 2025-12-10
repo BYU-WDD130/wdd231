@@ -7,6 +7,7 @@
   <title>Activities - Cayos Tours</title>
   <link rel="stylesheet" href="styles/activities.css">
   <script src="scripts/activities.js" defer></script>
+  <script src="scripts/gallery.js" defer></script>
 </head>
 <body>
   <header>
@@ -37,6 +38,19 @@
         <!-- JS will insert activity cards here -->
       </div>
     </section>
+
+<section class="photo-gallery">
+  <h2>Photo Gallery</h2>
+  <div class="gallery-grid" id="gallery-grid"></div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox hidden">
+  <span class="close-lightbox">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+
   </main>
 
 <footer>

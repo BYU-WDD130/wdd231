@@ -4,31 +4,46 @@
       "id": 1,
       "title": "Snorkeling & Diving",
       "description": "Explore colorful coral reefs and diverse marine life in the pristine waters of Cayos Cochinos.",
-      "image": "images/diving.webp"
+      "image": "images/diving.webp",
+      "price": 85,
+      "places": ["Cayo Menor", "Coral Reef", "Deep Diving Area"],
+      "days": 1
     },
     {
       "id": 2,
       "title": "Island Hopping",
       "description": "Visit the most beautiful cays and hidden beaches in Cayos Cochinos.",
-      "image": "images/starfish.webp"
+      "image": "images/starfish.webp",
+      "price": 120,
+      "places": ["Cayo Mayor", "Secret Beaches", "Cayo Rojo"],
+      "days": 1
     },
     {
       "id": 3,
       "title": "Wildlife Tours",
       "description": "Observe tropical birds, sea turtles, and other native species in their natural habitat.",
-      "image": "images/infoforest.webp"
+      "image": "images/infoforest.webp",
+      "price": 95,
+      "places": ["Eco Trail", "Tropical Forest", "Turtle Zones"],
+      "days": 2
     },
     {
       "id": 4,
       "title": "Cultural Experiences",
       "description": "Meet local communities and learn about Garifuna traditions and lifestyle.",
-      "image": "images/Boylocal.webp"
+      "image": "images/Boylocal.webp",
+      "price": 60,
+      "places": ["Garifuna Community", "Cultural Center", "Local Beach"],
+      "days": 1
     },
     {
       "id": 5,
       "title": "Custom Adventures",
       "description": "Create your own itinerary for a truly personalized experience in Cayos Cochinos.",
-      "image": "images/joy.webp"
+      "image": "images/joy.webp",
+      "price": 150,
+      "places": ["Chosen Locations", "Private Beaches", "Custom Routes"],
+      "days": 1
     }
   ]
 }
