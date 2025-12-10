@@ -8,6 +8,9 @@
     { "image": "images/scuba.avif", "alt": "Equitment for scuba" },
     { "image": "images/presentation.webp", "alt": "some of our customers" },
     { "image": "images/isla.webp", "alt": "island" },
-    { "image": "images/garifunas.avif", "alt": "the Garifuna people" }
+    { "image": "images/garifunas.avif", "alt": "the Garifuna people" },
+    { "image": "images/Boa.webp", "alt": "pink boa" },
+    { "image": "images/service.avif", "alt": "Turtle eggs care" },
+    { "image": "images/Pelicans.webp", "alt": "the Garifuna people" }
   ]
 }
