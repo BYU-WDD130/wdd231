@@ -11,6 +11,8 @@
     { "image": "images/garifunas.avif", "alt": "the Garifuna people" },
     { "image": "images/Boa.webp", "alt": "pink boa" },
     { "image": "images/service.avif", "alt": "Turtle eggs care" },
-    { "image": "images/Pelicans.webp", "alt": "the Garifuna people" }
+    { "image": "images/Pelicans.webp", "alt": "the Garifuna people" },
+    { "image": "images/sea-turtle.webp", "alt": "sea turtle in the coral arrecife" },    
+    { "image": "images/playa.webp", "alt": "One of the sand beaches" }      
   ]
 }
