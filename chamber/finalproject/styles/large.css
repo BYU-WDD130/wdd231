@@ -55,6 +55,13 @@
 
     section {
         padding: 2rem;
+  
+    }
+
+    .section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #00796b;
     }
 
     .featured-images {
