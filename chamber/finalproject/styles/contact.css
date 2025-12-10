@@ -267,7 +267,6 @@ form button:hover {
 
 
 
-
 footer {
     background-color: #0077b6; 
     color: white;
@@ -281,12 +280,13 @@ footer {
     gap: 1rem;
 }
 
-
-
 .footer-container h3 {
     font-family: 'Merriweather', serif;
     margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
+
+
 
 footer input[type="email"] {
     padding: 0.5rem;
@@ -303,8 +303,42 @@ footer button {
     color: white;
 }
 
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    justify-content: center;
+    text-align: center;
+}
 
+#town {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
+.card1 #current-temp {
+    font-size: 2rem;
+    margin: .3rem 0;
+}
+
+.card1 {
+    padding: 1rem;
+    border-radius: 22px;
+    border: 2px solid #f5f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card1:hover {
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+}
 
 
 button:hover {
@@ -313,28 +347,39 @@ button:hover {
 
 .sitemap, #LastModified {
     text-align: center;
+    justify-content:baseline;
     margin-top: 1rem;
     font-size: 0.9rem;
 }
 
-.social-media {
-    display: block;
-    gap: 10px;
-    margin-top: 3rem;
 
+.social-media {
+    padding: 2rem;
 }
 
+.social-media a {
+    display: row;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
 
 .social-media img {
-    width: 34px;
-    height: 34px;
-    border: #ccc solid 1px;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    border: #ccc 1px solid;
     border-radius: 22px;
-
+    
 }
+
+
 .social-media img:hover {
     background-color: #ddd;
 }
+
+
 
 /* Responsive */
 @media (min-width: 38rem) {

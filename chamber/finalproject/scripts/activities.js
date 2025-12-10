@@ -49,3 +49,50 @@ navbutton.addEventListener('click', () => {
   navbutton.classList.toggle('show');
   navBar.classList.toggle('show');
 });
+
+
+
+const myTown = document.querySelector('#town')
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weatherIcon');
+const captionDesc = document.querySelector('#weatherDesc');
+
+
+// Trier, Germany coordinates
+const myKey = 'f3849d6e217234d7429486bdaab8f5bb'; 
+const myLat = 15.79;
+const myLong = -86.62;
+
+// OpenWeatherMap API URL
+const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&units=imperial&appid=${myKey}`;
+
+
+async function apiFetch() {
+  try {
+    const response = await fetch(myUrl);
+    if (response.ok) {
+      const data = await response.json();
+      //console.log(data); // testing only
+     displayResults(data); // uncomment when ready
+    } else {
+        throw Error(await response.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
+}
+
+
+
+function displayResults(data) {
+
+
+    currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
+const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', 'weather icon');
+    captionDesc.textContent = `${data.weather[0].description} `;
+    myTown.innerHTML = data.name
+}
+
+apiFetch();

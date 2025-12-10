@@ -42,3 +42,6 @@ navbutton.addEventListener('click', () => {
         img.loading = 'lazy'; // ojo este tipo de carga mejora el rendimiento de las imagenes. 
         featuredContainer.appendChild(img);
     });
+
+
+

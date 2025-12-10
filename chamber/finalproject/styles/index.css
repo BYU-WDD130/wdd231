@@ -261,20 +261,13 @@ h2, h3 {
     text-align: center;
 }
 
-.social-media {
 
-    justify-content: center;
-    column-gap: 8px;
-    
-}
 .social-media a {
     display: row;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
-
-
 }
 
 .social-media img {
@@ -283,6 +276,7 @@ h2, h3 {
     align-items: center;
     border: #ccc 1px solid;
     border-radius: 22px;
+    
 }
 
 
@@ -324,9 +318,11 @@ footer button {
     color: white;
 }
 
+
 button:hover {
     cursor: pointer;
 }
+
 
 .sitemap, #LastModified {
     text-align: center;
