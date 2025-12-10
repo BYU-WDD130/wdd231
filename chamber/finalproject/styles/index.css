@@ -26,6 +26,7 @@
     --header-gap: 5rem;
     --hero-height: 60vh;
     --featured-max-width: 1200px;
+    --featured-min-width: 600px;
     --social-size: 38px;
     --social-container-size: 44px;
     --footer-padding: 2rem;
@@ -263,11 +264,11 @@ h2, h3 {
 }
 
 .section {
-    padding: 2rem;
+    padding: 1rem;
     margin: 0 auto;
-    max-width: var(--featured-max-width);
+    max-width: var(--featured-min-width);
     background-color: #ffffff;
-    border-radius: 8px;
+
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     justify-content: space-between;
 
