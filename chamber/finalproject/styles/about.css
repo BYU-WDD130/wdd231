@@ -179,10 +179,12 @@ text-align: center;
 .hero-section {
   width: 100%;
   max-width: 590px;
-  max-height: 250px;      /* La sección nunca mide más de 250px */
+  max-height: 300px;      /* La sección nunca mide más de 250px */
   margin: 0 auto;     /* centra el recuadro */
   overflow: hidden;   /* recorta lo que salga */
   position: relative;      /* Oculta el exceso de la imagen */
+  border: #ccc solid 1px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .hero-section img {
