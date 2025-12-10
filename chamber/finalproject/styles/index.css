@@ -295,7 +295,7 @@ h2, h3 {
 .facts ul {
 
     list-style-type: none;
-    display: flex;
+    display: block;
     gap: 1rem;
     padding: 1rem;
     background-color: #ffffff;
@@ -311,9 +311,47 @@ h2, h3 {
     color: #00796b;
 }
 .facts li {
+    display: block;
     flex: 1;
     text-align: center;
     font-size: var(--font-size-p);
+}
+
+
+
+.contact-cta {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #ffffff;
+    border-top: 2px solid #d0e6ff;
+    margin-top: 3rem;
+
+}
+
+.contact-cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #00796b;
+}
+
+.contact-cta p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #0077cc;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #005fa3;
 }
 
 .social-media a {
