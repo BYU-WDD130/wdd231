@@ -231,6 +231,7 @@ text-align: center;
   gap: 10px;
 }
 
+
 /* Contact Form */
 form {
   margin-top: 20px;
@@ -278,15 +279,18 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1rem;
+    padding: 1.5rem;
 }
 
 .footer-container h3 {
     font-family: 'Merriweather', serif;
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-
+.footer-container p {
+    font-size: 1rem;
+}
 
 footer input[type="email"] {
     padding: 0.5rem;

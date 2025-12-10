@@ -242,6 +242,11 @@ footer {
 .footer-container h3 {
     font-family: 'Merriweather', serif;
     margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.footer-container p {
+    font-size: 1rem;
 }
 
 footer input[type="email"] {
@@ -295,6 +300,10 @@ footer button {
     text-align: center;
     margin-top: 1rem;
     font-size: 0.9rem;
+}
+
+.social-media {
+    padding: 2rem;
 }
 
 .social-media a {
