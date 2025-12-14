@@ -8,7 +8,7 @@ const featuredItems = [
 ];
 
 // Lista de cursos que ya he tomado
-const takenCourses = ["CSE-110", "WDD-130", "CSE-111", "WDD-131"];
+const takenCourses = ["CSE-110", "WDD-130", "CSE-111", "WDD-131", "CSE-210", "WDD-231"];
 
 function filterMenu(subject) {
   let itemsToShow = subject === "all"
