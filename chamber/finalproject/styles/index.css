@@ -416,3 +416,27 @@ button:hover {
     margin-top: 1rem;
     font-size: var(--font-size-small);
 }
+
+.loom-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #1f2937; /* dark gray */
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loom-button:hover {
+  background-color: #111827;
+  transform: translateY(-2px);
+}
+
+.loom-button:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
