@@ -12,7 +12,7 @@
 
     /* Fonts */
     --font-body: Arial, sans-serif;
-    --font-heading: "Montserrat", sans-serif;
+    --font-heading: 'Merriweather', sans-serif;
     --font-footer: 'Merriweather', serif;
 
     /* Font Sizes */
@@ -115,7 +115,7 @@ header .logo h1 {
     left: -250px;
     width: 250px;
     height: 100vh;
-    background-color: var(--color-header-bg);
+    background-color: rgba(0, 119, 182, 0.85);
     padding-top: 100px;
     transition: left 0.3s ease-in-out;
     z-index: 999;
