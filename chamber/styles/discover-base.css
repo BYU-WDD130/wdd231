@@ -250,7 +250,7 @@ footer button {
 
 
 /*---Media---*/
-@media (min-width: 641px) {
+@media (min-width: 38rem) {
 
 .discover-grid {
     max-width: 1200px;
@@ -282,11 +282,13 @@ nav a.active {
 
 }
 
+
+
 /*-------LARGE-------*/
+@media (min-width: 1025px) 
 
-@media (min-width: 1025px) {
+    {
 
-    
 .discover-grid {
     grid-template-areas:
         "message message"
@@ -329,6 +331,7 @@ nav a.active {
 .navigation.show ul {
    display: flex;
   }
+
 
 
 

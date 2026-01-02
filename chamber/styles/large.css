@@ -84,7 +84,11 @@
 
 
 
+nav a.active {
+  color: #bd5405; /* highlight color */
+  font-weight: bold;
 
+}
 
 
 }

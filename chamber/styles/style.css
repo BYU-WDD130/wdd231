@@ -362,3 +362,9 @@ footer button {
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
+
+nav a.active {
+  color: #bd5405; /* highlight color */
+  font-weight: bold;
+
+}
