@@ -264,12 +264,20 @@ header nav ul li a {
     color: var(--weather)
 }
 
-.events-container, .featured-businesses, #membersContainer.grid {
+.events-container, #membersContainer.grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
 }
+
+.featured-businesses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
 
 .list .member-card {
     display: flex;
