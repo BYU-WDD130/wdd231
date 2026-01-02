@@ -472,7 +472,7 @@ footer button {
 }
 
 /* Responsive layout */
-@media (min-width: 768px) {
+@media (min-width: 38rem) {
   .cards-container {
 
     gap: 1rem;
@@ -481,4 +481,23 @@ footer button {
   .card {
     flex: 1 1 calc(50% - 1rem); /* Two per row on larger screens */
   }
+  .navigation {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #00274D;      
+    gap: 1rem
+
+}
+
+.navigation.show ul {
+   display: flex;
+  }
+
 }
