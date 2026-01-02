@@ -366,5 +366,5 @@ footer button {
 nav a.active {
   color: #bd5405; /* highlight color */
   font-weight: bold;
-
+  border-bottom: 2px solid #39e6a4;
 }

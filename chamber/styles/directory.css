@@ -95,13 +95,13 @@ button:hover {
 }
 
 .navigation ul {
-    display: block;
-   list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-   background-color: #00274D;      
-
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #00274D;   
+  gap: 1rem;   
 
 }
 
