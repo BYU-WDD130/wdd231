@@ -95,7 +95,7 @@ button:hover {
 }
 
 .navigation ul {
-  display: block;
+
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -107,7 +107,7 @@ button:hover {
 
 .navigation a {
     display: block;
-    padding: .8rem 10px;
+    padding: .8rem 16px;
     text-decoration: none;
 
 }
@@ -305,12 +305,13 @@ header .cta-btn {
 }
 
 .btn {
-    margin: 0.5rem;
-    padding: 5px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 
@@ -318,21 +319,21 @@ header .cta-btn {
     background-color: #00274D;
     color: #fff;
 }
+.primary-btn:hover {
+        transform: translateY(-2px);
+}
 
 .accent-btn {
     background-color: #bd5405;
     color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 1px  10px 5px;
-    border-radius: 5px;
 
 }
 
 
 
 .accent-btn:hover {
-    background-color: #a34704;
+     background-color: #a34704;
+    transform: translateY(-2px);
 }
 
 .cta-btn {
