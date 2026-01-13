@@ -1,3 +1,8 @@
+        
+        body {
+            background: linear-gradient(to right, #f9f9f9, #d5e9f4, #d4d8ed);
+        }
+        
         form {
             max-width: 600px;
             margin: 2rem auto;
