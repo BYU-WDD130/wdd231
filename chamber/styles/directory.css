@@ -172,6 +172,7 @@ header nav ul li a {
 
 /* GRID: imagen arriba, contenido abajo */
 #membersContainer.grid .member-card {
+  background: linear-gradient(to right, #e6e2df, #d5e9f4, #d4d8ed);
   display: flex;
   flex-direction: column;
   align-items: center;
